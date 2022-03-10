@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="img/icon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -101,13 +102,26 @@
       </div>
       <img src="img/sell3.jpg" alt="selling point one">
     </div>
-    <div class="concept-art">
-      <h2>Concept Art</h2>
-      <!-- two arrows, change background image with js onclick -->
-      <img class="arrow-left">
-      <img class="arrow-right">
-    </div>
   </div>
+
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img class="logo" src="img/slide1.jpg" alt=""></div>
+      <div class="swiper-slide"><img class="logo" src="img/slide2.jpg" alt=""></div>
+      <div class="swiper-slide"><img class="logo" src="img/slide3.jpg" alt=""></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <!-- <img class="swiper-button-prev" src="img/baby-monstah.png"> -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
   <footer class="footer-nav">
     <div class="footer-nav-links">
       <a href="main-site"><img class="logo" src="img/baby-monstah.png" alt="bbmonstah logo"></a>
@@ -129,11 +143,22 @@
     <div class="socials">
       <h3>socials</h3>
       <ul>
-        <li><a href="link location"><img src="facebook.png" alt="facebook"></a></li>
-        <li><a href="link location"><img src="facebook.png" alt="twitter"></a></li>
-        <li><a href="link location"><img src="facebook.png" alt="tiktok"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/facebook.png" alt="facebook"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/twitter.png" alt="twitter"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png" alt="reddit"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png" alt="reddit"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png" alt="reddit"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png" alt="reddit"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png" alt="reddit"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png" alt="reddit"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png" alt="reddit"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png" alt="reddit"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png" alt="reddit"></a></li>
+        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png" alt="reddit"></a></li>
       </ul>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/test.js"></script>
 </body>
 </html>

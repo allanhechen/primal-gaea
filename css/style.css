@@ -1,3 +1,34 @@
+/* start of external */
+
+.swiper {
+  width: 80%;
+  height: auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-next {
+  background-image: url(../img/baby-monstah.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background-image: url(../img/baby-monstah.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  display: none;
+}
+
+/* end of external */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +45,8 @@ img {
 .footer-nav {
   display: flex;
   justify-content: center;
-  padding: 1vw 3vw 0 3vw;
+  align-items: center;
+  padding: 5vmin 1.5vw;
   background-color: grey;
 }
 
@@ -38,7 +70,7 @@ img {
   margin-top: 1vw;
 }
 
-.footer-nav ul {
+.footer-nav-list {
   list-style-type: none;
   margin-right: 10vw;
 }
@@ -48,11 +80,18 @@ img {
   color: black;
 }
 
-.socials li {
-  display: inline-block;
-  margin: 2em 2em;
+.socials {
+  max-width: 50%;
 }
 
+.socials li {
+  display: inline-block;
+  margin: 0.5vw;
+}
+
+.footer-nav-image {
+  width: 4vw;
+}
 /* main content */
 .main-content {
   max-width: 1500px;
@@ -101,6 +140,7 @@ img {
   background-image: url(../img/bg.png);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .main-landing div.text {
