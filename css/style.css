@@ -5,46 +5,17 @@
   /* outline: 1px solid red; */
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 2rem;
-}
 
-nav img {
-  margin: 5rem;
-}
-
-nav ul {
-  list-style-type: none;
-  display: inline-block;
-}
-
-nav li {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin: 0 1vw;
-}
-
-nav a {
-  text-decoration: none;
-  color: #777;
-}
-
-
-nav button {
-  display: inline-block;
-  text-align: none;
-  background-color: orange;
-  padding: 1rem 2rem;
+img {
+  display: block;
 }
 
 /* footer nav */
 .footer-nav {
   display: flex;
-  justify-content: flex-start;
-  margin: 0 5vw;
+  justify-content: center;
+  padding: 1vw 3vw 0 3vw;
+  background-color: grey;
 }
 
 .footer-nav-links {
@@ -54,7 +25,7 @@ nav button {
 }
 
 .footer-nav-links a img {
-  margin: 2vw;
+  margin-right: 3vw;
   width: 10vw;
 }
 
@@ -120,4 +91,77 @@ nav button {
 .selling-point img {
   width: 40vw;
   max-width: 750px;
+}
+
+/* main landing */
+.main-landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-landing div.text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  text-align: center;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+/* main landing nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+nav img {
+  width: 15vw;
+  max-width: 200px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 1vw;
+  background-color: black;
+  transition: ease-out()
+}
+
+nav li::after {
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  transition: width ease-out 250ms;
+}
+
+nav li:hover::after {
+  width: 100%
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav button {
+  display: inline-block;
+  text-align: none;
+  background-color: orange;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
 }
