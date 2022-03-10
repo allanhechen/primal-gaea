@@ -2,9 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -44,7 +44,7 @@ nav button {
 .footer-nav {
   display: flex;
   justify-content: flex-start;
-  margin: 0 5em;
+  margin: 0 5vw;
 }
 
 .footer-nav-links {
@@ -54,15 +54,16 @@ nav button {
 }
 
 .footer-nav-links a img {
-  margin: 5em;
+  margin: 2vw;
+  width: 10vw;
 }
 
 .footer-nav-links ul {
   margin-left: 1vw;
-  margin-top: 1vw;
+  /* margin-top: 1vw; */
 }
 
-.footer-nav-links li {
+.footer-nav-links li:not(:first-child) {
   margin-top: 1vw;
 }
 
@@ -83,7 +84,7 @@ nav button {
 
 /* main content */
 .main-content {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: auto;
 }
 
@@ -91,4 +92,32 @@ nav button {
   margin: 5vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.selling-point .text {
+  max-width: 750px;
+}
+
+.selling-point h2 {
+  font-size: calc(20px + 1vw);
+}
+
+.selling-point p {
+  font-size: calc(10px + 0.5vw);
+}
+
+.right {
+  margin-left: 1em;
+  text-align: left;
+}
+
+.left {
+  margin-right: 1em;
+  text-align: right;
+}
+
+.selling-point img {
+  width: 40vw;
+  max-width: 750px;
 }
