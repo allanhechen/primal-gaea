@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid red;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+nav img {
+  margin: 5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 1vw;
+}
+
+nav a {
+  text-decoration: none;
+  color: #777;
+}
+
+
+nav button {
+  display: inline-block;
+  text-align: none;
+  background-color: orange;
+  padding: 1rem 2rem;
+}
+
+.selling-point {
+  display: flex;
+  justify-content: center;
+}
+
+.selling-point h2 {
+  display: block;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  max-width: 1000px;
+  
+}
+.footer-nav ul {
+  list-style-type: none;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.socials li {
+  display: inline-block;
+  margin: 2em 2em;
+}
+
+.main-content {
+  display: block;
+}
+
+.selling-point {
+  margin: 5vh;
+}
