@@ -44,13 +44,26 @@ nav button {
 .footer-nav {
   display: flex;
   justify-content: flex-start;
-  /* margin-right: 5vw; */
+  margin: 0 5em;
 }
 
 .footer-nav-links {
   display: flex;
   justify-content: flex-start;
   max-width: 1000px;
+}
+
+.footer-nav-links a img {
+  margin: 5em;
+}
+
+.footer-nav-links ul {
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+
+.footer-nav-links li {
+  margin-top: 1vw;
 }
 
 .footer-nav ul {
