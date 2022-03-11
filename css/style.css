@@ -1,6 +1,6 @@
 /* start of external */
 .swiper {
-  max-width: 80rem;
+  max-width: 100%;
 }
 
 .swiper-slide img {
@@ -77,6 +77,10 @@ h1, h2, h3 {
 
 .container {
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80rem;
 }
 
 .left, .right {
@@ -87,7 +91,7 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   padding: min(3%, 2rem);
-  max-width: 80rem;
+  max-width: 100%;
 }
 
 .selling-point > *:not(:last-child) {
@@ -109,5 +113,9 @@ h1, h2, h3 {
   
   .left {
     text-align: right;
+  }
+
+  .selling-point > * + * {
+    margin-left: 2rem;
   }
 }
