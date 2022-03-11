@@ -92,6 +92,7 @@ img {
 .footer-nav-image {
   width: 4vw;
 }
+
 /* main content */
 .main-content {
   max-width: 1500px;
@@ -204,18 +205,4 @@ nav button {
   border: none;
   padding: 1rem 2rem;
   border-radius: 10px;
-}
-
-.tag {
-}
-
-.tag {
-  opacity: 0;
-  transform: translate(0, 10vh);
-  transition: all 1s;
-}
-
-.tag.visible {
-  opacity: 1;
-  transform: translate(0, 0);
 }
