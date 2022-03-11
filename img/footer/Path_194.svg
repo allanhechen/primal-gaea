@@ -1,0 +1,16 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921 1055" width="1921" height="1055">
+	<title>Group_111</title>
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="960.1" y1="1054.9" x2="960.1" y2=".1">
+			<stop offset="0" stop-color="#253618"  />
+			<stop offset="1" stop-color="#e6ebe1"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: url(#grd1) } 
+	</style>
+	<g id="Group_111">
+		<path id="Path_194" class="s0" d="m1920.15 1054.85h-1920.05c0 0 0.12-1046.71 0.02-1054.71c41.44 104.11 193.41 276.91 421.44 220.59c228.03-56.32 478.07-51.53 576.54 88.32c98.48 139.85 236.51 204.92 536.14 139.85c299.63-65.07 385.93 226.39 385.93 226.39l-0.01 379.56z" />
+	</g>
+</svg>
