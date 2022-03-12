@@ -193,6 +193,25 @@ nav button {
   border-radius: 10px;
 }
 
+@media (max-width: 53rem) {
+  nav .links {
+    /* visibility: hidden; */
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+    width: 100%;
+    right: 1rem;
+    top: 2rem;
+    max-width: 20rem;
+    position: absolute;
+    z-index: 1;
+  }
+
+  nav li {
+    display: block;
+  }
+}
+
 /* main landing */
 .main-landing {
   height: 100vh;
