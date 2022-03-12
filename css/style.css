@@ -57,7 +57,7 @@ img {
   object-fit: cover;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: var(--ff-accent);
   font-weight: 900;
   font-size: 3rem;
@@ -143,12 +143,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 2rem;
+  width: 90%;
+  max-width: 100rem;
+  margin: min(3%, 2rem);
 }
 
 nav img {
-  width: 15vw;
-  max-width: 200px;
+  width: 200px;
 }
 
 nav ul {
@@ -159,7 +160,7 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 0.5rem 1rem;
-  margin: 0 1vw;
+  margin: 0 0.5rem;
   background-color: black;
   transition: ease-out()
 }
@@ -197,13 +198,14 @@ nav button {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-image: url(../img/bg.png);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.main-landing div.text {
+div.title {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -216,20 +218,20 @@ nav button {
 .footer-nav {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 5vmin 1.5vw;
+  align-items: flex-top;
+  padding: 2rem;
   background-color: grey;
 }
 
 .footer-nav-links {
   display: flex;
   justify-content: flex-start;
-  max-width: 1000px;
+  max-width: 100rem;
 }
 
 .footer-nav-links a img {
   margin-right: 3vw;
-  width: 10vw;
+  width: 12rem;
 }
 
 .footer-nav-links ul {
@@ -238,12 +240,12 @@ nav button {
 }
 
 .footer-nav-links li:not(:first-child) {
-  margin-top: 1vw;
+  margin-top: 1.4rem;
 }
 
 .footer-nav-list {
   list-style-type: none;
-  margin-right: 10vw;
+  margin-right: 10rem;
 }
 
 .footer-nav a {
@@ -251,15 +253,15 @@ nav button {
   color: black;
 }
 
-.socials {
+/* .socials {
   max-width: 50%;
-}
+} */
 
 .socials li {
   display: inline-block;
-  margin: 0.5vw;
+  margin: 0.5rem;
 }
 
 .footer-nav-image {
-  width: 4vw;
+  width: 5rem;
 }
