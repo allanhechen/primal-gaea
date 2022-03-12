@@ -219,6 +219,7 @@ div.title {
   display: flex;
   justify-content: center;
   align-items: flex-top;
+  flex-wrap: wrap;
   padding: 2rem;
   background-color: grey;
 }
@@ -235,8 +236,7 @@ div.title {
 }
 
 .footer-nav-links ul {
-  margin-left: 1vw;
-  /* margin-top: 1vw; */
+  margin-left: 1rem;
 }
 
 .footer-nav-links li:not(:first-child) {
@@ -245,7 +245,7 @@ div.title {
 
 .footer-nav-list {
   list-style-type: none;
-  margin-right: 10rem;
+  width: 15rem;
 }
 
 .footer-nav a {
@@ -253,9 +253,10 @@ div.title {
   color: black;
 }
 
-/* .socials {
-  max-width: 50%;
-} */
+.socials ul {
+  list-style-type: none;
+  max-width: 100%;
+}
 
 .socials li {
   display: inline-block;
