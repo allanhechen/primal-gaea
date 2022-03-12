@@ -219,7 +219,6 @@ div.title {
   display: flex;
   justify-content: center;
   align-items: flex-top;
-  flex-wrap: wrap;
   padding: 2rem;
   background-color: grey;
 }
@@ -227,7 +226,7 @@ div.title {
 .footer-nav-links {
   display: flex;
   justify-content: flex-start;
-  max-width: 100rem;
+  min-width: 800px;
 }
 
 .footer-nav-links a img {
@@ -265,4 +264,39 @@ div.title {
 
 .footer-nav-image {
   width: 5rem;
+}
+
+/* im so frustrated lol i give up */
+@media (max-width: 1110px) {
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  .socials {
+    margin-top: 2em;
+  }
+  
+  .footer-nav-list {
+    width: 450px;
+  }
+}
+
+@media (max-width: 830px) {
+  .footer-nav-links {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-nav-list {
+    margin-top: 2em;
+    width: auto;
+  }
+
+  .socials {
+    margin-top: 2em;
+    margin-left: 15px;
+    width: 100%;
+  }
 }
