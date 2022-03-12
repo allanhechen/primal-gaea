@@ -1,10 +1,9 @@
 /* start of external */
 .swiper {
   max-width: 80rem;
-  width: 100%;
 }
 
-.swiper-slide img {
+.swiper img {
   width: 100%;
 }
 
@@ -36,7 +35,7 @@
 
   --clr-accent-300: #5BC0EB;
 
-  --ff-primary: 'Calibri', serif;
+  --ff-primary: 'Crimson Pro', serif;
   --ff-accent: 'Almendra', serif;
 }
 
@@ -61,6 +60,15 @@ h1, h2 {
   font-family: var(--ff-accent);
   font-weight: 900;
   font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .bg-light {
@@ -97,7 +105,7 @@ h1, h2 {
 }
 
 .selling-point > *:not(:last-child) {
-  margin-bottom: min(5%, 2rem);
+  margin-bottom: min(2%, 2rem);
 }
 
 @media (min-width: 40rem) {
@@ -125,17 +133,6 @@ h1, h2 {
   .selling-point > *:not(:last-child) {
     margin-bottom: 0;
   }
-}
-
-.tag {
-  opacity: 0;
-  transform: translate(0, 10vh);
-  transition: all 1s;
-}
-
-.tag.visible {
-  opacity: 1;
-  transform: translate(0, 0);
 }
 
 /* main landing nav */
@@ -265,7 +262,7 @@ nav button {
   flex-direction: column;
   align-items: center;
   background-image: url(../img/bg.png);
-  background-position: center;
+  background-position: left;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -285,7 +282,8 @@ div.title {
   justify-content: center;
   align-items: flex-top;
   padding: 2rem;
-  background-color: grey;
+  background-color: #1C1412;
+  color: white;
 }
 
 .footer-nav-links {
@@ -314,7 +312,7 @@ div.title {
 
 .footer-nav a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .socials ul {
