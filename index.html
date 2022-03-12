@@ -14,8 +14,10 @@
 <body>
   <div class="main-landing">
     <nav class="top-nav">
-      <a href=""><img src="img/logo.png" alt="primal gaea logo"></a>
-      <div class="link-container">
+      <a href=""><img src="img/baby-monstah.png" alt="primal gaea logo"></a>
+      <img src="img/menu.png" onclick="helloWorld()">
+      <div class="link-container" id="nav-menu">
+        <img src="img/menu.png" onclick="helloWorld()">
         <div class="links">
           <ul>
             <li><a href="">Selling1</a></li>
@@ -180,6 +182,12 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="js/test.js"></script>
   <script type="text/javascript" src="js/scrollfade.js"></script>
+  <script>
+    function helloWorld() {
+      var element = document.getElementById('nav-menu');
+      element.classList.toggle("visible")
+    }
+  </script>
 </body>
 
 </html>
