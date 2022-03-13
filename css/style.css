@@ -1,10 +1,11 @@
 /* start of external */
 .swiper {
-  max-width: 80rem;
+  max-width: 100vw;
 }
 
 .swiper img {
   width: 100%;
+  max-width: 100vw;
 }
 
 .swiper-button-next {
@@ -180,7 +181,7 @@ nav li {
   transition: ease-out()
 }
 
-nav li::after {
+/* nav li::after {
   content:'';
   width: 0%;
   height: 2px;
@@ -188,7 +189,7 @@ nav li::after {
   display: block;
   margin: auto;
   transition: width ease-out 250ms;
-}
+} */
 
 nav li:hover::after {
   width: 100%
@@ -208,7 +209,7 @@ nav button {
   border-radius: 10px;
 }
 
-@media (max-width: 53rem) {
+@media (max-width: 62rem) {
   nav > img {
     visibility: visible;
   }
@@ -228,7 +229,7 @@ nav button {
     align-items: start;
     z-index: 2;
     background-color: var(--clr-primary-800);
-    transition: 500ms;
+    transition: 250ms;
     transition-timing-function: ease-out;
   }
 

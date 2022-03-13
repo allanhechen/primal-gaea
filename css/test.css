@@ -1,0 +1,149 @@
+:root {
+  --dark-grey: #31393C;
+  --neutral: #e9f1f7;
+  --blue: #2176ff;
+  --yellow: #FDCA40;
+
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-accent: 'Oswald', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  min-height: 200vh;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  font-family: var(--ff-accent);
+}
+
+p, a {
+  font-family: var(--ff-primary);
+}
+
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #2176ff;
+}
+
+nav {
+  position: relative;
+  width: 80%;
+  max-width: 80rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a img {
+  width: 5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0.3rem;
+}
+
+nav ul li a {
+  padding: 0.5rem 2rem;
+  background-color: #FDCA40;
+  border-radius: 10%;
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: #31393C;
+}
+
+.footer-wrapper {
+  background-color: #31393C;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  justify-content: space;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.footer-container, .socials-container {
+  /* margin: 1rem; */
+  width: 20rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-container ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.socials-container ul {
+  display: flex;
+  align-items: center;
+}
+
+.socials-container li:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.socials-container li a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 38px;
+  text-align: center;
+}
+
+.socials-container li a {
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+}
+footer img {
+  width: 10rem;
+}
+
+footer a {
+  color: white;
+  align-self: center;
+  margin-right: 1rem;
+}
+
+/* @media (max-width:1160px) {
+  footer {
+    justify-content: left;
+  }
+} */
