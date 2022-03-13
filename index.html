@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almendra&family=Crimson+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" 
+    integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Primal Gaea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -16,9 +19,9 @@
   <div class="main-landing" id="top-nav">
     <nav class="top-nav">
       <a href=""><img src="img/baby-monstah.png" alt="primal gaea logo"></a>
-      <img src="img/menu.png" onclick="helloWorld()">
+      <img src="img/menu.png" onclick="slide()">
       <div class="link-container" id="nav-menu">
-        <img src="img/menu.png" onclick="helloWorld()">
+        <img src="img/menu.png" onclick="slide()">
         <div class="links">
           <ul>
             <li><a href="#about">About</a></li>
@@ -116,53 +119,44 @@
   </div>
 
   
-  <footer class="footer-nav">
-    <div class="footer-nav-links">
-      <a href="https://bbmonstah.com/"><img class="logo" src="img/baby-monstah.png" alt="bbmonstah logo"></a>
-      <ul class="footer-nav-list">
-        <li>
-          <h3>links desc</h3>
-        </li>
-        <li><a href="link">link text</a></li>
-        <li><a href="link">link text</a></li>
-        <li><a href="link">link text</a></li>
-        <li><a href="link">link text</a></li>
-      </ul>
-      <ul class="footer-nav-list">
-        <li>
-          <h3>links desc</h3>
-        </li>
-        <li><a href="link">link text</a></li>
-        <li><a href="link">link text</a></li>
-        <li><a href="link">link text</a></li>
-        <li><a href="link">link text</a></li>
-      </ul>
-    </div>
-    <div class="socials">
-      <h3>Socials</h3>
-      <ul>
-        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/facebook.png"
-              alt="facebook"></a></li>
-        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/twitter.png"
-              alt="twitter"></a></li>
-        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png"
-              alt="reddit"></a></li>
-        <li class="footer-nav-link"><a href="link location"><img class="footer-nav-image" src="img/reddit.png"
-              alt="reddit"></a></li>
-      </ul>
-    </div>
-  </footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-container"><a><img src="img/baby-monstah.png"></a></div>
+      <div class="footer-container">
+        <ul>
+          <li><h3>About</h3></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Invest</a></li>
+        </ul>
+      </div>
+      <div class="footer-container">
+        <ul>
+          <li><h3>About</h3></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Invest</a></li>
+        </ul>
+      </div>
+      <div class="socials-container">
+        <ul>
+          <li><h3>Socials</h3></li>
+          <li><a class="fa fa-circle fa-brands fa-facebook-f" href=""></a></li>
+          <li><a class="fa-brands fa-twitter"href=""></a></li>
+          <li><a class="fa-brands fa-instagram"href=""></a></li>
+          <li><a class="fa-brands fa-tiktok" href=""></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="js/test.js"></script>
   <script type="text/javascript" src="js/scrollfade.js"></script>
-  <script>
-    function helloWorld() {
-      var element = document.getElementById('nav-menu');
-      element.classList.toggle("visible")
-    }
-  </script>
+  <script type="text/javascript" src="js/slide.js"></script>
 </body>
 
 </html>
