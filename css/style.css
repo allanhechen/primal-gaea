@@ -1,6 +1,6 @@
 /* start of external */
 .swiper {
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 .swiper img {
@@ -226,13 +226,13 @@ nav button {
     position: fixed;
     height: 100vh;
     top: 0;
-    right: -21rem;
-    width: 21rem;
+    right: -350px;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: start;
     z-index: 2;
-    background-color: var(--clr-primary-800);
+    background-color: rgba(9, 19, 53, 0.99);
     transition: 250ms;
     transition-timing-function: ease-out;
   }
@@ -266,7 +266,7 @@ nav button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg.jpg);
   background-position: left;
   background-size: cover;
   background-attachment: fixed;
