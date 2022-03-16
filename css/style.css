@@ -379,12 +379,21 @@ footer a {
   .footer-container {
     margin-bottom: 1rem;
   }
+
+  .footer-container {
+    order: 5;
+  }
+
+  .footer-logo {
+    order: -1;
+  }
 }
 
 @media (max-width: 750px) {
   .footer-container, .socials-container {
     align-items: start;
     margin-left: 10vw;
+    order: 1;
   }
 
   .footer-container li:last-child {
@@ -397,6 +406,10 @@ footer a {
     content: "";
     width: 75%;
     border: 1px solid #3c464a;
+  }
+
+  .footer-logo {
+    margin-left: 0;
   }
 }
 
@@ -429,9 +442,13 @@ footer a {
   flex-direction: column;
   padding: min(5%, 2rem);
   max-width: 80rem;
-  min-height: 60rem;
+  /* min-height: 60rem; */
   align-items: center;
   justify-content: space-around;
   width: 100%;
+}
+
+.conceptArt > *:not(:last-child) {
+  padding-bottom: min(5%, 2rem);
 }
 
