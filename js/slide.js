@@ -10,3 +10,15 @@ document.addEventListener('click', function(e){
     element.classList.toggle("visible");
   }
 });
+
+var thing = document.getElementById("navbar");
+
+var myScrollFunc = function() {
+  if (window.scrollY >= window.innerHeight) {
+    thing.classList.add("view");
+  } else {
+    thing.classList.remove("view");
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);

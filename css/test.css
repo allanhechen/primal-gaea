@@ -31,6 +31,10 @@ p, a {
   font-family: var(--ff-primary);
 }
 
+p {
+  position: sticky;
+}
+
 .nav-wrapper {
   width: 100%;
   display: flex;

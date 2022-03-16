@@ -8,37 +8,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almendra&family=Crimson+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" 
-    integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+    integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Primal Gaea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <div class="main-landing" id="top-nav">
-    <nav class="top-nav">
-      <a href=""><img src="img/baby-monstah.png" alt="primal gaea logo"></a>
-      <img src="img/menu.png" onclick="slide()">
-      <div class="link-container" id="nav-menu">
+  <div class="main-landing">
+    <div class="nav-wrapper" id="navbar">
+      <nav class="top-nav">
+        <a href="">
+          <h1>Primal Gaea</h1>
+        </a>
         <img src="img/menu.png" onclick="slide()">
-        <div class="links">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#combat">Combat</a></li>
-            <li><a href="#inventory">Inventory</a></li>
-            <li><a href="#gameplay">Gameplay</a></li>
-            <li><a href="whitepaper.html">Whitepaper</a></li>
-          </ul>
-          <button>Play Now</button>
+        <div class="link-container" id="nav-menu">
+          <img src="img/menu.png" onclick="slide()">
+          <div class="links">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#combat">Combat</a></li>
+              <li><a href="#inventory">Inventory</a></li>
+              <li><a href="#gameplay">Gameplay</a></li>
+              <li><a href="whitepaper.html">Whitepaper</a></li>
+            </ul>
+            <button>Play Now</button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </div>
 
   <div class="title">
     <h1>Primal Gaea</h1>
-    <h2>some text about the game</h2>
+    <button class="playNow">Play Now</button>
   </div>
 
   <div class="container bg-light">
@@ -48,11 +52,11 @@
       <div class="text right">
         <h2>What is Primal Gaea?</h2>
         <p>
-          Primal Gaea starts off from a 2D browser game inspired by RPG games found in the early 2000s. 
-          It will then evolve into a game with its own client that is a full-fledge 3D MMORPG with its 
-          own metaverse, lore and backstory. Players’ actions will alter the course of the world and 
-          will compete not only by combat but with politics and economics. The base game will always 
-          be there, but the metaverse will allow players living in Primal Gaea to create their own 
+          Primal Gaea starts off from a 2D browser game inspired by RPG games found in the early 2000s.
+          It will then evolve into a game with its own client that is a full-fledge 3D MMORPG with its
+          own metaverse, lore and backstory. Players’ actions will alter the course of the world and
+          will compete not only by combat but with politics and economics. The base game will always
+          be there, but the metaverse will allow players living in Primal Gaea to create their own
           businesses, real estate matters and strategy will be the key to success.
         </p>
       </div>
@@ -63,8 +67,8 @@
       <div class="text left">
         <h2>Unique Combat Scenario System</h2>
         <p>
-          Powerful weapons, armor, potions don't come easily. Those who are tenacious enough to keep 
-          trying even though things get difficult are rewarded with unimaginable riches as discovering new 
+          Powerful weapons, armor, potions don't come easily. Those who are tenacious enough to keep
+          trying even though things get difficult are rewarded with unimaginable riches as discovering new
           powerful inventions will not only serve them but the greater good of the community.
         </p>
       </div>
@@ -77,7 +81,7 @@
       <div class="text right">
         <h2>Inventory System</h2>
         <p>
-          Our combat system takes the best of preparedness, RNG and variety. Testing the players ability 
+          Our combat system takes the best of preparedness, RNG and variety. Testing the players ability
           art of preparation, decisions making skill and if lady luck is on your side
         </p>
       </div>
@@ -88,10 +92,10 @@
       <div class="text left">
         <h2>Progressive Gameplay Actual Play to Earn Model</h2>
         <p>
-          Primal Gaea economy is its unique selling point, everything in Primal Gaea is considered and 
-          thought of, every NFT or FT has its use and purpose, nothing is minted or produced just for 
-          the sake of it, a fine balance between utility and collection but alas it will not be perfect, 
-          however, protocols and adjustments will be made reactively and effectively if problems arise. 
+          Primal Gaea economy is its unique selling point, everything in Primal Gaea is considered and
+          thought of, every NFT or FT has its use and purpose, nothing is minted or produced just for
+          the sake of it, a fine balance between utility and collection but alas it will not be perfect,
+          however, protocols and adjustments will be made reactively and effectively if problems arise.
           Community feedback will be welcome and considered. After all this Primal Gaea is run by the inhabitants.
         </p>
       </div>
@@ -101,62 +105,71 @@
 
   <div class="container bg-dark">
     <!-- Slider main container -->
-    <div class=" swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img class="Primal Gaea Cats" src="img/slide1.jpg" alt=""></div>
-        <div class="swiper-slide"><img class="Village" src="img/slide2.jpg" alt=""></div>
-        <div class="swiper-slide"><img class="Village" src="img/slide3.jpg" alt=""></div>
+    <div class="text conceptArt" >
+      <h2>Concept Art</h2>
+    
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/concept/concept1.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/concept/concept2.png" alt=""></div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <!-- <img class="swiper-button-prev" src="img/baby-monstah.png"> -->
+          <div class="swiper-button-prev">
+          </div>
+          <div class="swiper-button-next">
+          </div>
+        </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- If we need navigation buttons -->
-      <!-- <img class="swiper-button-prev" src="img/baby-monstah.png"> -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
-  </div>
 
-  
-  <div class="footer-wrapper">
-    <footer>
-      <div class="footer-container"><a><img src="img/baby-monstah.png"></a></div>
-      <div class="footer-container">
-        <ul>
-          <li><h3>About</h3></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Careers</a></li>
-          <li><a href="">Invest</a></li>
-        </ul>
-      </div>
-      <div class="footer-container">
-        <ul>
-          <li><h3>About</h3></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Careers</a></li>
-          <li><a href="">Invest</a></li>
-        </ul>
-      </div>
-      <div class="socials-container">
-        <ul>
-          <li><h3>Socials</h3></li>
-          <li><a class="fa fa-circle fa-brands fa-facebook-f" href=""></a></li>
-          <li><a class="fa-brands fa-twitter"href=""></a></li>
-          <li><a class="fa-brands fa-instagram"href=""></a></li>
-          <li><a class="fa-brands fa-tiktok" href=""></a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="js/test.js"></script>
-  <script type="text/javascript" src="js/scrollfade.js"></script>
-  <script type="text/javascript" src="js/slide.js"></script>
+    <div class="footer-wrapper">
+      <footer>
+        <div class="footer-container"><a><img src="img/baby-monstah.png"></a></div>
+        <div class="footer-container">
+          <ul>
+            <li>
+              <h3>About</h3>
+            </li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Invest</a></li>
+          </ul>
+        </div>
+        <div class="footer-container">
+          <ul>
+            <li>
+              <h3>About</h3>
+            </li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Invest</a></li>
+          </ul>
+        </div>
+        <div class="socials-container">
+          <ul>
+            <li>
+              <h3>Socials</h3>
+            </li>
+            <li><a class="fa fa-circle fa-brands fa-facebook-f" href=""></a></li>
+            <li><a class="fa-brands fa-twitter" href=""></a></li>
+            <li><a class="fa-brands fa-instagram" href=""></a></li>
+            <li><a class="fa-brands fa-tiktok" href=""></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
 </body>
 
 </html>
