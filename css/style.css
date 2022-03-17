@@ -1,18 +1,13 @@
 /* start of external */
 
 @font-face {
-    font-family: 'Plain Germanica';
-    src: url('../fonts/PlainGermanica.eot');
-    src: url('../fonts/PlainGermanica.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/PlainGermanica.woff2') format('woff2'),
-        url('../fonts/PlainGermanica.woff') format('woff'),
-        url('../fonts/PlainGermanica.ttf') format('truetype'),
-        url('../fonts/PlainGermanica.svg#PlainGermanica') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+  font-family: 'plaingermanicaregular';
+  src: url('../fonts/plain_germanica-webfont.woff2') format('woff2'),
+       url('../fonts/plain_germanica-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
+}
 .swiper {
   margin-top:20;
   max-width: 100%;
@@ -40,7 +35,7 @@
 
   --ff-primary: 'Crimson Pro', serif;
   --ff-accent: 'Almendra', serif;
-  --ff-title: 'Plain Germanica', 'Crimson Pro', serif;
+  --ff-title: 'plaingermanicaregular', 'Crimson Pro', serif;
 }
 
 * {
