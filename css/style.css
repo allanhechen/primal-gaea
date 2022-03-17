@@ -21,6 +21,10 @@
 
 /* end of external */
 
+html {
+	scroll-behavior: smooth;
+}
+
 :root {
   --clr-primary-200: #DDE2C6;
   --clr-primary-300: #D5896F;
