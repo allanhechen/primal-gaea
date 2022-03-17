@@ -265,6 +265,7 @@ nav button {
   border: none;
   padding: 1rem 2rem;
   border-radius: 10px;
+  color: black;
 }
 
 @media (max-width: 67rem) {
@@ -491,4 +492,10 @@ footer a {
   border: none;
   padding: 1rem 2rem;
   border-radius: 10px;
+}
+
+@media (hover: none) {
+  .main-landing {
+    background-attachment: initial;
+  }
 }

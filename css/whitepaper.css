@@ -5,7 +5,7 @@ iframe {
 }
 
 .nav-wrapper {
-  position: unset;
+  position: fixed;
 }
 
 .wrapper {
