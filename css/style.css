@@ -2,8 +2,12 @@
 
 @font-face {
     font-family: 'Plain Germanica';
-    src: url('../fonts/PlainGermanica.woff2') format('woff2'),
-        url('../fonts/PlainGermanica.woff') format('woff');
+    src: url('../fonts/PlainGermanica.eot');
+    src: url('../fonts/PlainGermanica.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlainGermanica.woff2') format('woff2'),
+        url('../fonts/PlainGermanica.woff') format('woff'),
+        url('../fonts/PlainGermanica.ttf') format('truetype'),
+        url('../fonts/PlainGermanica.svg#PlainGermanica') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -36,7 +40,7 @@
 
   --ff-primary: 'Crimson Pro', serif;
   --ff-accent: 'Almendra', serif;
-  --ff-title: 'Plain Germanica', serif;
+  --ff-title: 'Plain Germanica', 'Crimson Pro', serif;
 }
 
 * {
@@ -186,6 +190,11 @@ nav > img {
   width: 2em;
 }
 
+.link-container {
+  display: flex;
+  align-items: center;
+}
+
 .link-container > img {
   visibility: hidden;
   position: absolute;
@@ -275,7 +284,6 @@ nav button {
   nav .link-container {
     position: fixed;
     height: 100vh;
-    top: 0;
     right: -350px;
     width: 350px;
     display: flex;
