@@ -12,6 +12,7 @@ document.addEventListener('click', function(e){
   if (dropDown.classList.contains("active") && target.id != "dropdown-menu" && target.id != "more") {
     // console.log(target);
     dropDown.classList.toggle("active");
+    dropDown.classList.toggle("clickable");
   }
   if (element.classList.contains("visible") && $(window).width() - x > 350) {
     element.classList.toggle("visible");
@@ -20,4 +21,5 @@ document.addEventListener('click', function(e){
 
 function dropdown() {
   dropDown.classList.toggle("active");
+  dropDown.classList.toggle("clickable");
 }

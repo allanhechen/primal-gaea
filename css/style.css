@@ -228,6 +228,7 @@ nav li ul {
   box-shadow: 5px 5px 10px -5px;
   opacity: 0;
   transition: 250ms ease-out;
+  pointer-events: none;
 }
 
 nav li ul.active {
@@ -270,6 +271,10 @@ nav button {
   padding: 1rem 2rem;
   border-radius: 10px;
   color: black;
+}
+
+.clickable {
+  pointer-events: all;
 }
 
 @media (max-width: 67rem) {
