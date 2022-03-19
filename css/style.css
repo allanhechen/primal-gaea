@@ -16,7 +16,6 @@
 .swiper img {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 /* end of external */
@@ -71,7 +70,8 @@ h2 {
 }
 
 p {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -115,23 +115,34 @@ p {
   padding-bottom: min(5%, 2rem);
 }
 
-
 .selling-point {
   display: flex;
   flex-direction: column;
   padding: min(5%, 2rem);
   max-width: 80rem;
-  min-height: 50rem;
 }
 
 .selling-point > *:not(:last-child) {
   margin-bottom: min(2%, 2rem);
 }
 
+.swiper-selling {
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--clr-primary-200);
+  border-radius: 1em;
+}
+
+.swiper-selling > .selling-point {
+  width: 98%;
+  
+}
+
 @media (min-width: 40rem) {
   .selling-point {
     flex-direction: row;
     align-items: center;
+    min-height: 45rem;
   }
 
   .selling-point > * {
