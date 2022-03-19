@@ -8,6 +8,7 @@
   font-style: normal;
 
 }
+
 .swiper {
   margin-top:20;
   max-width: 100%;
@@ -41,7 +42,7 @@ html {
   --ff-title: 'plaingermanicaregular', 'Crimson Pro', serif;
 }
 
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -452,6 +453,96 @@ div.title h1 {
 
   div.title h2 {
     font-size: 1.5rem;
+  }
+}
+
+/* timeline */
+.timeline {
+  /* width: 90%; */
+  max-width: 80rem;
+  padding: min(5%, 2rem);
+  position: relative;
+}
+
+.timeline h3 {
+  font-size: 1.5rem;
+}
+
+.timeline p {
+  font-size: 1.3rem;
+}
+.timeline > *:not(:last-child) {
+  margin-bottom: min(2%, 0.7rem);
+}
+
+.timeline-content {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-primary-200);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.timeline-content > *:not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+
+@media (min-width: 45rem) {
+  .timeline-content {
+    width: 50%;
+    position: relative;
+  }
+
+  .timeline-content h4 {
+    position: absolute;
+    transform: translateY(-70px);
+    color: var(--clr-primary-400);
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: min(5%, 2rem);
+    bottom: min(5%, 2rem);
+    width: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--clr-primary-400);
+  }
+
+  .timeline > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .timeline > *:nth-child(odd) {
+    float: right;
+    clear: both;
+    transform: translateX(1rem);
+  }
+
+  .timeline > *:nth-child(even) {
+    float: left;
+    clear: both;
+    transform: translateX(-1rem);
+  }
+
+  .timeline > *::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--clr-primary-400);
+    position: absolute;
+    top: 5%;
+    border-radius: 50%;
+  }
+
+  .timeline > *:nth-child(odd)::before {
+    left: -1rem;
+    transform: translateX(-50%);
+  }
+
+  .timeline > *:nth-child(even)::before {
+    right: -1rem;
+    transform: translateX(50%);
   }
 }
 
