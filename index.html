@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="img/icon.ico">
+  <link rel="preload" as="image" href="img/preload@0.5x.png">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,14 +12,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
     integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
   <title>Primal Gaea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+  <div id="preloader">
+    <img src="img/preload@0.5x.png">
+    <h1>loading...</h1>
+  </div>
+
   <div class="main-landing">
     <div class="nav-wrapper" id="navbar">
       <nav class="top-nav">
@@ -51,13 +54,14 @@
 
   <div class="title">
     <h1>Primal Gaea</h1>
+    <h2>The next step in blockchain gaming</h2>
     <button class="playNow">Play Now</button>
   </div>
 
   <div class="container bg-light">
     <!-- insert transition svg -->
     <div id="about" class="selling-point">
-      <img src="img/sell1.jpg" alt="Cats in outfits">
+      <img src="img/sell1-small@0.5x.png" alt="Cats in outfits">
       <div class="text right">
         <h2>What is Primal Gaea?</h2>
         <p>
@@ -93,7 +97,7 @@
           </div>
           <div class="swiper-selling swiper-slide">
             <div id="inventory" class="selling-point">
-              <img src="img/sell3.jpg" alt="Green Health Potion">
+              <img src="img/sell3-small@0.5x.png" alt="Green Health Potion">
               <div class="text right">
                 <h2>Inventory System</h2>
                 <p>
@@ -137,8 +141,8 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="img/concept/concept1.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/concept/concept2.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/concept/concept1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/concept/concept2.jpg" alt=""></div>
         </div>
          <!-- If we need pagination -->
          <div class="swiper-pagination"></div>
@@ -166,7 +170,7 @@
 
   <div class="footer-wrapper">
     <footer>
-      <div class="footer-container"><a><img src="img/baby-monstah.png"></a></div>
+      <div class="footer-container"><a><img src="img/baby-monstah-small@0.33x.png"></a></div>
       <div class="footer-container">
         <ul>
           <li>
@@ -208,6 +212,7 @@
   <script type="text/javascript" src="js/swiper.js"></script>
   <script type="text/javascript" src="js/slide.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="js/preloader.js"></script>
 
 </body>
 

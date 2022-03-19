@@ -1,6 +1,6 @@
 var navBar = document.getElementById("navbar");
 var dropDown = document.getElementById("dropdown-menu");
-const height = window.innerHeight * 0.75;
+const height = window.innerHeight * 0.5;
 
 var myScrollFunc = function() {
   if (window.scrollY >= height) {
