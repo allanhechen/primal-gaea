@@ -1,7 +1,7 @@
 preloader = document.getElementById("preloader");
-sleep(200).then(() => {
-  preloader.style.opacity = "0";
-    preloader.remove();
+preloader.style.opacity = "0";
+sleep(500).then(() => {
+  preloader.remove();
 });
 
 function sleep (time) {
