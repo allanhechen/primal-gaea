@@ -688,8 +688,9 @@ footer a {
   text-align: none;
   background-color: orange;
   border: none;
-  padding: 1rem 2rem;
+  padding: 1.5rem 5rem;
   border-radius: 10px;
+  font-size: 1.5rem;
 }
 
 @media (hover: none) {
