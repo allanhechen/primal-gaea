@@ -107,6 +107,59 @@ p {
 #preloader> *:not(:last-child) {
   margin-bottom: 1em;
 }
+
+/* sticky helpbar */
+#overlay-links {
+  margin: 1em;
+  padding: 0.5em 1em;
+  background: #3c464a;
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 500ms;
+  color: white;
+  border-radius: 10px;
+}
+
+#overlay-links img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  /* transform: translate(25%, -25%); */
+}
+
+#overlay-links p {
+  font-size: 1.3rem;
+}
+
+#overlay-links a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  padding: 0.1em;
+  border-radius: 5px;
+}
+
+#overlay-links a:hover {
+  background-color: #31393C;
+}
+
+#overlay-links > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+/* look at this please */
+#overlay-links > *:last-child { 
+  margin-top: 0.5rem;
+}
+
+#overlay-links.visible {
+  opacity: 1;
+}
+
 .container {
   margin-inline: auto;
   display: flex;
@@ -534,7 +587,7 @@ footer a {
   }
 }
 
-.view {
+.view-navbar {
   position: fixed;
   top: 0;
 }

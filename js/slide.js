@@ -22,3 +22,10 @@ function dropdown() {
   dropDown.classList.toggle("active");
   dropDown.classList.toggle("clickable");
 }
+
+function removeOverlay() {
+  overlay.style.opacity = "0"
+  sleep(500).then(() => {
+    overlay.remove();
+  }); 
+}
