@@ -290,6 +290,7 @@ nav button {
     position: fixed;
     height: 100vh;
     right: -350px;
+    top: 0px;
     width: 350px;
     display: flex;
     justify-content: center;
@@ -324,6 +325,7 @@ nav button {
 
   nav .visible {
     right: 0;
+    top: 0;
   }
 
   nav li ul {
@@ -333,6 +335,7 @@ nav button {
     left: 0.4rem;
     background-color: inherit;
     box-shadow: none;
+    pointer-events: all;
   }
 }
 

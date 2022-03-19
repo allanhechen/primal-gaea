@@ -1,6 +1,5 @@
 var element = document.getElementById("nav-menu");
 var dropDown = document.getElementById("dropdown-menu");
-const height = window.innerHeight * 0.75;
 
 function slide() {
   element.classList.toggle("visible")
