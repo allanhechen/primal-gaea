@@ -1,12 +1,16 @@
-var navBar = document.getElementById("navbar");
-var dropDown = document.getElementById("dropdown-menu");
+const navBar = document.getElementById("navbar");
+// const dropDown = document.getElementById("dropdown-menu");
+const overlay = document.getElementById("overlay-links");
+const height = window.innerHeight * 0.5;
 
 var myScrollFunc = function() {
   if (window.scrollY >= height) {
-    navBar.classList.add("view");
+    navBar.classList.add("view-navbar");
+    overlay.classList.add("visible");
   } else {
-    navBar.classList.remove("view");
-    dropDown.classList.remove("active")
+    navBar.classList.remove("view-navbar");
+    dropDown.classList.remove("active");
+    overlay.classList.remove("visible");
   }
 };
 

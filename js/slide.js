@@ -1,23 +1,33 @@
-var element = document.getElementById("nav-menu");
+var navMenu = document.getElementById("nav-menu");
 var dropDown = document.getElementById("dropdown-menu");
-const height = window.innerHeight * 0.75;
+var dropDownMore = document.getElementById("more");
+var menuButton = document.getElementById("openMenu");
 
 function slide() {
-  element.classList.toggle("visible")
+  navMenu.classList.toggle("visible");
 }
 
 document.addEventListener('click', function(e){
   x = e.pageX;
   target = e.target;
-  if (dropDown.classList.contains("active") && target.id != "dropdown-menu" && target.id != "more") {
-    // console.log(target);
-    dropDown.classList.toggle("active");
+  if (target != dropDown && target.parentNode != dropDown && target != dropDownMore) {
+    dropDown.classList.remove("active");
+    dropDown.classList.remove("clickable");
   }
-  if (element.classList.contains("visible") && $(window).width() - x > 350) {
-    element.classList.toggle("visible");
+  if (target != navMenu && target.parentNode != navMenu && target != menuButton) {
+    navMenu.classList.remove("visible");
   }
 });
 
 function dropdown() {
-  dropDown.classList.toggle("active");
+    dropDown.classList.toggle("active");
+    dropDown.classList.toggle("clickable");
+
+}
+
+function removeOverlay() {
+  overlay.style.opacity = "0"
+  sleep(500).then(() => {
+    overlay.remove();
+  }); 
 }

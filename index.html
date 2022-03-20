@@ -2,39 +2,43 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="img/icon.ico">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="preload" as="image" href="img/preload@0.5x.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almendra&family=Crimson+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
     integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  
-
   <title>Primal Gaea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+  <div id="preloader">
+    <img src="img/preload@0.5x.png">
+    <h1>Loading...</h1>
+  </div>
+
   <div class="main-landing">
     <div class="nav-wrapper" id="navbar">
       <nav class="top-nav">
         <a href="index.html">
           <h1>Primal Gaea</h1>
         </a>
-        <img src="img/menu.png" onclick="slide()">
+        <img id="openMenu" src="img/menu.png" onclick="slide()">
         <div class="link-container" id="nav-menu">
-          <img src="img/menu.png" onclick="slide()">
+          <img src="img/close-button.svg" onclick="slide()">
           <div class="links">
             <ul>
               <li><a href="#about">About</a></li>
               <li><a href="#combat">Combat</a></li>
               <li><a href="#inventory">Inventory</a></li>
               <li><a href="#gameplay">Gameplay</a></li>
-              <li><p id="more" onclick="dropdown()">More</p>
+              <li>
+                <p id="more" onclick="dropdown()">More</p>
                 <ul id="dropdown-menu">
                   <li><a href="whitepaper.html">Whitepaper</a></li>
                   <li><a href="team.html">About The Team</a></li>
@@ -50,13 +54,27 @@
 
   <div class="title">
     <h1>Primal Gaea</h1>
+    <h2>The next step in blockchain gaming</h2>
     <button class="playNow">Play Now</button>
+  </div>
+
+  <div class="overlay-wrapper">
+    <div id="overlay-links">
+      <!-- don't forget to add the close button -->
+      <img src="img/overlay/Find_us_blank@0.5x.png">
+      <div class="overlay-link-wrapper">
+        <a href="" title="Discord"><img src="img/overlay/discord@0.5x.png"></a>
+        <a href="https://telegram.org/" title="Telegram"><img src="img/overlay/telegram@0.5x.png"></a>
+        <a href="" title="Medium"><img src="img/overlay/medium@0.5x.png"></a>
+        <a href="https://twitter.com/PrimalGaea" title="Twitter"><img src="img/overlay/twitter@0.5x.png"></a>
+      </div>
+    </div>
   </div>
 
   <div class="container bg-light">
     <!-- insert transition svg -->
     <div id="about" class="selling-point">
-      <img src="img/sell1.jpg" alt="Cats in outfits">
+      <img src="img/sell1-small@0.5x.png" alt="Cats in outfits">
       <div class="text right">
         <h2>What is Primal Gaea?</h2>
         <p>
@@ -71,27 +89,43 @@
     </div>
   </div>
   <div class="container bg-medium">
-    <div id="combat" class="selling-point">
-      <div class="text left">
-        <h2>Unique Combat Scenario System</h2>
-        <p>
-          Powerful weapons, armor, potions don't come easily. Those who are tenacious enough to keep
-          trying even though things get difficult are rewarded with unimaginable riches as discovering new
-          powerful inventions will not only serve them but the greater good of the community.
-        </p>
-      </div>
-      <img src="img/sell2.jpg" alt="Various Weapons">
-    </div>
-  </div>
-  <div class="container bg-dark">
-    <div id="inventory" class="selling-point">
-      <img src="img/sell3.jpg" alt="Green Health Potion">
-      <div class="text right">
-        <h2>Inventory System</h2>
-        <p>
-          Our combat system takes the best of preparedness, RNG and variety. Testing the players ability
-          art of preparation, decisions making skill and if lady luck is on your side
-        </p>
+    <!-- Slider main container -->
+    <div class="conceptArt">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-selling swiper-slide">
+            <div id="combat" class="selling-point">
+              <div class="text left">
+                <h2>Unique Combat Scenario System</h2>
+                <p>
+                  Powerful weapons, armor, potions don't come easily. Those who are tenacious enough to keep
+                  trying even though things get difficult are rewarded with unimaginable riches as discovering new
+                  powerful inventions will not only serve them but the greater good of the community.
+                </p>
+              </div>
+              <img src="img/sell2.jpg" alt="Various Weapons">
+            </div>
+          </div>
+          <div class="swiper-selling swiper-slide">
+            <div id="inventory" class="selling-point">
+              <img src="img/sell3-small@0.5x.png" alt="Green Health Potion">
+              <div class="text right">
+                <h2>Inventory System</h2>
+                <p>
+                  Our combat system takes the best of preparedness, RNG and variety. Testing the players ability
+                  art of preparation, decisions making skill and if lady luck is on your side
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <img class="swiper-button-prev" src="img/navigation/previous@0.5x.png">
+        <img class="swiper-button-next" src="img/navigation/next@0.5x.png">
       </div>
     </div>
   </div>
@@ -113,87 +147,123 @@
 
   <div class="container bg-medium">
     <!-- Slider main container -->
-    <div class="text conceptArt" >
+    <div class="text conceptArt">
       <h2>Concept Art</h2>
-    
+
       <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="img/concept/concept1.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/concept/concept2.png" alt=""></div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- If we need navigation buttons -->
-          <!-- <img class="swiper-button-prev" src="img/baby-monstah.png"> -->
-          <div class="swiper-button-prev">
-          </div>
-          <div class="swiper-button-next">
-          </div>
+          <div class="swiper-slide"><img src="img/concept/concept1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/concept/concept2.jpg" alt=""></div>
+        </div>
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+         <!-- If we need navigation buttons -->
+         <img class="swiper-button-prev" src="img/navigation/previous@0.5x.png">
+         <img class="swiper-button-next" src="img/navigation/next@0.5x.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-light">
+    <div class="timeline-wrapper">
+      <!-- please help me understand why the before is flying out of the timeline -->
+      <h2>Timeline</h2>
+      <div class="timeline clearfix">
+        <div class="timeline-content">
+          <h3>header1</h3>
+          <h4 class="date">march 22, 2022</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
+            eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
+             maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+        </div>
+        <div class="timeline-content">
+          <h3>header2</h3>
+          <h4 class="date">march 22, 2022</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
+            eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
+             maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+        </div>
+        <div class="timeline-content">
+          <h3>header3</h3>
+          <h4 class="date">march 22, 2022</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
+            eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
+             maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+        </div>
+        <div class="timeline-content">
+          <h3>header4</h3>
+          <h4 class="date">march 22, 2022</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
+            eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
+             maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
         </div>
       </div>
     </div>
   </div>
-  
-    <div class="container bg-dark">
 
-      <div class="text conceptArt" >
-        <h2>Building</h2>
-      </div>
-      <div>
-        <script src="/js/three.min.js"></script>
-        <!-- <script type="module" src="/js/OrbitalControls.js"></script> -->
-        <script src="/js/GLTFLoader.js"></script>
-        <script src="/js/render.js"></script>
-
-      </div>
-      
+  <!-- <div class="container bg-dark">
+    <div class="text conceptArt">
+      <h2>Building</h2>
     </div>
-
-    <div class="footer-wrapper">
-      <footer>
-        <div class="footer-container"><a><img src="img/baby-monstah.png"></a></div>
-        <div class="footer-container">
-          <ul>
-            <li>
-              <h3>About</h3>
-            </li>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Invest</a></li>
-          </ul>
-        </div>
-        <div class="footer-container">
-          <ul>
-            <li>
-              <h3>About</h3>
-            </li>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Invest</a></li>
-          </ul>
-        </div>
-        <div class="socials-container">
-          <ul>
-            <li>
-              <h3>Socials</h3>
-            </li>
-            <li><a class="fa fa-circle fa-brands fa-facebook-f" href=""></a></li>
-            <li><a class="fa-brands fa-twitter" href=""></a></li>
-            <li><a class="fa-brands fa-instagram" href=""></a></li>
-            <li><a class="fa-brands fa-tiktok" href=""></a></li>
-          </ul>
-        </div>
-      </footer>
+    <div>
+      <script src="/js/three.min.js"></script>
+      <script type="module" src="/js/OrbitalControls.js"></script>
+      <script src="/js/GLTFLoader.js"></script>
+      <script src="/js/render.js"></script>
     </div>
+  </div> -->
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="js/test.js"></script>
-    <script type="text/javascript" src="js/slide.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-container footer-logo"><a><img src="img/baby-monstah-small@0.33x.png"></a></div>
+      <div class="footer-container">
+        <ul>
+          <li>
+            <h3>About</h3>
+          </li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Invest</a></li>
+        </ul>
+      </div>
+      <div class="footer-container">
+        <ul>
+          <li>
+            <h3>About</h3>
+          </li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Invest</a></li>
+        </ul>
+      </div>
+      <div class="socials-container">
+        <ul>
+          <li>
+            <h3>Socials</h3>
+          </li>
+          <li><a class="fa fa-circle fa-brands fa-facebook-f" href=""></a></li>
+          <li><a class="fa-brands fa-twitter" href=""></a></li>
+          <li><a class="fa-brands fa-instagram" href=""></a></li>
+          <li><a class="fa-brands fa-tiktok" href=""></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/swiper.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="js/preloader.js"></script>
 
 </body>
 
