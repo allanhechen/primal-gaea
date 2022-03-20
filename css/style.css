@@ -14,9 +14,23 @@
   max-width: 100%;
 }
 
-.swiper img {
+.swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: inherit;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.swiper:hover > * {
+  opacity: 1;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "";
 }
 
 /* end of external */
