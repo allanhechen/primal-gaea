@@ -462,6 +462,7 @@ div.title h1 {
   max-width: 80rem;
   padding: min(5%, 2rem);
   position: relative;
+  height: auto;
 }
 
 .timeline h3 {
@@ -486,6 +487,12 @@ div.title h1 {
   margin-bottom: 0.2rem;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @media (min-width: 45rem) {
   .timeline-content {
     width: 50%;
@@ -501,10 +508,11 @@ div.title h1 {
   .timeline::before {
     content: "";
     position: absolute;
-    top: min(5%, 2rem);
-    bottom: min(5%, 2rem);
+    /* top: min(5%, 2rem); */
+    /* bottom: min(5%, 2rem); */
     width: 3px;
     left: 50%;
+    height: 100%;
     transform: translateX(-50%);
     background-color: var(--clr-primary-400);
   }
