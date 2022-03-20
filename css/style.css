@@ -130,6 +130,7 @@ p {
   position: fixed;
   z-index: 5;
   bottom: 0;
+  right: 5vw;
   opacity: 0;
   visibility: hidden;
   transition: visibility 500ms, opacity 500ms linear;
@@ -196,8 +197,9 @@ p {
 .swiper-selling {
   display: flex;
   justify-content: center;
-  border: 2px solid var(--clr-primary-200);
-  border-radius: 1em;
+  border: 100px solid black;
+  border-image: url(../img/navigation/background.png) 33%;
+  /* border-radius: 1em; */
 }
 
 .swiper-selling > .selling-point {
