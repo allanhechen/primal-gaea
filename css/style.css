@@ -25,6 +25,14 @@
   transition: opacity 250ms;
 }
 
+.swiper-button-next {
+  transform: translateX(-25px);
+}
+
+.swiper-button-prev {
+  transform: translateX(25px);
+}
+
 .swiper:hover > * {
   opacity: 1;
 }
@@ -156,8 +164,18 @@ p {
 #overlay-links a:hover {
   background-color: rgba(158, 127, 89, 0.3);
   border-radius: 5px;
+  cursor: pointer;
 }
 
+#close {
+  position: absolute;
+  right: 35px;
+  top: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* general */
 .container {
   margin-inline: auto;
   display: flex;
@@ -325,6 +343,11 @@ nav li ul.active {
   width: 100%
 } */
 
+div.links {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
   text-decoration: none;
   color: white;
@@ -342,6 +365,10 @@ nav p {
 nav a img {
   display: inline-block;
   width: 10rem;
+}
+
+#more {
+  cursor: pointer;
 }
 
 .clickable {
@@ -374,11 +401,11 @@ nav a img {
 
   div .links {
     padding-top: 4rem;
+    width: 100%;
   }
 
-
-  nav button {
-    margin-top: 7em;
+  nav ul {
+    width: 100%;
   }
   
   nav li {
@@ -401,7 +428,7 @@ nav a img {
     visibility: visible;
     opacity: 1;
     top: -1.6rem;
-    left: 0.4rem;
+    left: -3.5rem;
     background-color: inherit;
     box-shadow: none;
     pointer-events: all;
@@ -441,6 +468,12 @@ div.title > *:not(:last-child) {
 
 div.title h1 {
   font-size: 8rem;
+}
+
+div.title a {
+  display: block;
+  width: 14rem;
+  margin: 0 auto;
 }
 
 @media (max-width: 30rem) {
@@ -605,22 +638,27 @@ footer {
   border-radius: 50%;
   line-height: 38px;
   text-align: center;
-  color: var(--dark-grey);
+  color: #553A41;
   background-color: white;
   text-decoration: none;
 }
 
 
 .socials-container li a:hover {
-  background-color: var(--dark-grey);
+  background-color: #553A41;
   color: white;
 }
 
 footer ul {
   list-style-type: none;
 }
+
 footer img {
   width: 10rem;
+}
+
+footer img:hover {
+  cursor: pointer;
 }
 
 footer a {

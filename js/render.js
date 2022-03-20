@@ -36,14 +36,37 @@ function init() {
   renderer.setSize(window.innerWidth - 100,window.innerHeight - 100);
   document.body.appendChild(renderer.domElement);
 
-  let loader = new THREE.GLTFLoader();
-  loader.load('../img/building', function(gltf){
-    model = gltf.scene.children[0];
-    // model.scale.set(0.5,0.5,0.5);
-    console.log(model)
-    scene.add(gltf.scene);
-    animate();
-  });
+  // let loader = new THREE.GLTFLoader();
+  // loader.load('../img/building', function(gltf){
+  //   model = gltf.scene.children[0];
+  //   // model.scale.set(0.5,0.5,0.5);
+  //   console.log(model)
+  //   scene.add(gltf.scene);
+  //   animate();
+  // });
+
+
+  // instantiate a loader
+const loader = new THREE.OBJLoader();
+
+  // load a resource
+  loader.load(
+    // resource URL
+    '../img/building/B1/buildings1.obj',
+    // called when resource is loaded
+    function ( object ) {
+      scene.add( object );
+    },
+    // called when loading is in progresses
+    function ( xhr ) {
+      console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+    },
+    // called when loading has errors
+    function ( error ) {
+      console.log( 'An error happened' );
+    }
+  );
+
 
   // let controls = new THREE.OrbitControls(camera, renderer.domElement);
   // // let controls = new THREE.OrbitControls(camera, renderer.domElement);
