@@ -5,7 +5,6 @@ const height = window.innerHeight * 0.5;
 
 var myScrollFunc = function() {
   if (window.scrollY >= height) {
-    console.log("hello");
     navBar.classList.add("view-navbar");
     overlay.classList.add("visible");
   } else {
