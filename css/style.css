@@ -129,7 +129,7 @@ p {
   padding: 0 1em;
   position: fixed;
   z-index: 5;
-  bottom: 0;
+  bottom: -3px;
   right: 5vw;
   opacity: 0;
   visibility: hidden;
@@ -197,8 +197,8 @@ p {
 .swiper-selling {
   display: flex;
   justify-content: center;
-  border: 100px solid black;
-  border-image: url(../img/navigation/background.png) 33%;
+  border: 30px solid black;
+  border-image: url(../img/navigation/background.png) 10%;
   /* border-radius: 1em; */
 }
 
@@ -555,7 +555,7 @@ div.title h1 {
 
 /* footer nav */
 .footer-wrapper {
-  background-color: #31393C;
+  background-color: #363432;
   color: white;
   display: flex;
   justify-content: center;
