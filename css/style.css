@@ -494,6 +494,7 @@ div.title h1 {
     /* bottom: min(5%, 2rem); */
     width: 3px;
     left: 50%;
+    top: 0;
     height: 100%;
     transform: translateX(-50%);
     background-color: var(--clr-primary-400);
