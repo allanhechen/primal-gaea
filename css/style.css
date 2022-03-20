@@ -111,54 +111,36 @@ p {
 
 /* sticky helpbar */
 #overlay-links {
-  margin: 1em;
-  padding: 0.5em 1em;
-  background: #3c464a;
+  margin: 0 1em;
+  padding: 0 1em;
   position: fixed;
   z-index: 5;
   bottom: 0;
-  text-align: center;
   opacity: 0;
-  transition: opacity 500ms;
-  color: white;
-  border-radius: 10px;
-}
-
-#overlay-links img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  /* transform: translate(25%, -25%); */
-}
-
-#overlay-links p {
-  font-size: 1.3rem;
-}
-
-#overlay-links a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: white;
-  padding: 0.1em;
-  border-radius: 5px;
-}
-
-#overlay-links a:hover {
-  background-color: #31393C;
-}
-
-#overlay-links > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-/* look at this please */
-#overlay-links > *:last-child { 
-  margin-top: 0.5rem;
+  visibility: hidden;
+  transition: visibility 500ms, opacity 500ms linear;
 }
 
 #overlay-links.visible {
+  visibility: visible;
   opacity: 1;
+}
+
+.overlay-link-wrapper {
+  position: absolute;
+  transform: translate(45px, -125px);
+  display: flex;
+  flex-direction: row;
+}
+
+.overlay-link-wrapper img {
+  width: 42px;
+  padding: 3px;
+}
+
+#overlay-links a:hover {
+  background-color: rgba(158, 127, 89, 0.3);
+  border-radius: 5px;
 }
 
 .container {
