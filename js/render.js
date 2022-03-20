@@ -37,7 +37,7 @@ function init() {
   document.body.appendChild(renderer.domElement);
 
   let loader = new THREE.GLTFLoader();
-  loader.load('../img/building/scene.gltf', function(gltf){
+  loader.load('../img/building', function(gltf){
     model = gltf.scene.children[0];
     // model.scale.set(0.5,0.5,0.5);
     console.log(model)
