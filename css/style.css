@@ -444,7 +444,7 @@ nav a img {
   .link-container a img {
     position: absolute;
     top: 1rem;
-    left: 1rem;
+    left: 2.5rem;
   }
 }
 
@@ -483,6 +483,12 @@ div.title a {
   margin: 0 auto;
 }
 
+#countdown {
+  font-size: 4rem;
+  width: 100%;
+  font-family: var(--ff-accent);
+}
+
 @media (max-width: 30rem) {
   div.title h1 {
     font-size: 5rem;
@@ -490,6 +496,10 @@ div.title a {
 
   div.title h2 {
     font-size: 1.5rem;
+  }
+
+  #countdown {
+    font-size: 3rem;
   }
 }
 
@@ -500,6 +510,10 @@ div.title a {
 
   div.title h2 {
     font-size: 1.5rem;
+  }
+
+  #countdown {
+    font-size: 3rem;
   }
 }
 
