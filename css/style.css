@@ -41,6 +41,13 @@
   content: "";
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -10vh;
+  visibility: hidden;
+}
+
 /* end of external */
 
 html {
