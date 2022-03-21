@@ -787,3 +787,33 @@ footer a {
     background-attachment: initial;
   }
 }
+
+/* for fullscreen view */
+.fullscreen {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  display: flex;
+}
+
+.fullscreen > .conceptArt .swiper-wrapper img {
+  max-height: 92vh;
+  max-width: none;
+  object-fit: contain;
+}
+
+.fullscreen > .conceptArt {
+  margin: 0 auto;
+  max-width: none;
+  width: 95%;
+  padding: 0;
+}
+
+.fullscreen > .conceptArt h2 {
+  display: none;
+}
