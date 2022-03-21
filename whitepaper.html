@@ -17,32 +17,25 @@
 </head>
 
 <body>
-  <div class="nav-wrapper view-navbar" id="navbar">
-    <div id="preloader">
-      <img src="img/preload@0.5x.png">
-      <h1>Loading...</h1>
-    </div>
+  <div id="preloader">
+    <img src="img/preload@0.5x.png">
+    <h1>Loading...</h1>
+  </div>
 
+  <div class="nav-wrapper view-navbar" id="navbar">
     <nav class="top-nav">
       <a href="index.html">
         <h1>Primal Gaea</h1>
       </a>
-      <img id="openMenu" src="img/menu.png" onclick="slide()">
+      <img src="img/menu.png" onclick="slide()">
       <div class="link-container" id="nav-menu">
-        <img src="img/close-button.svg" onclick="slide()">
+        <img src="img/menu.png" onclick="slide()">
         <div class="links">
-          <ul id="navlinks">
-            <li><a href="#about">About</a></li>
-            <li><a href="#systems">Systems</a></li>
-            <li><a href="#conceptart">Concept Art</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-            <li>
-              <p id="more" onclick="dropdown()">More</p>
-              <ul id="dropdown-menu">
-                <li><a href="whitepaper.html">Whitepaper</a></li>
-                <li><a href="team.html">About The Team</a></li>
-              </ul>
-            </li>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="team.html">About The Team</a></li>
+            <li><a href="buildings.html">Buildings</a></li>
           </ul>
           <a href=""><img src="img/navigation/Play_Now.png"></a>
         </div>
