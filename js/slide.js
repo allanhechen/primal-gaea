@@ -10,11 +10,12 @@ function slide() {
 document.addEventListener('click', function(e){
   x = e.pageX;
   target = e.target;
-  if (target != dropDown && target.parentNode != dropDown && target != dropDownMore) {
+  console.log(target.tagName);
+  if (target != dropDown && !dropDown.contains(target) && target != dropDownMore) {
     dropDown.classList.remove("active");
     dropDown.classList.remove("clickable");
   }
-  if (target != navMenu && target.parentNode != navMenu && target != menuButton) {
+  if (target != navMenu && !navMenu.contains(target) && target != menuButton || target.tagName == 'A') {
     navMenu.classList.remove("visible");
   }
 });

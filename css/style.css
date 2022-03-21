@@ -486,6 +486,7 @@ div.title a {
 #countdown {
   font-size: 4rem;
   width: 100%;
+  min-width: 30rem;  
   font-family: var(--ff-accent);
 }
 
@@ -500,6 +501,7 @@ div.title a {
 
   #countdown {
     font-size: 3rem;
+    min-width: 20rem;  
   }
 }
 

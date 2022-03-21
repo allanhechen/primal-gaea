@@ -1,18 +1,21 @@
 iframe {
   height: auto;
   width: 100%;
+  /* max-width: 55rem; */
   flex: 1;
+  border: none;
 }
 
 .nav-wrapper {
-  position: fixed;
+  position: relative;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 95vh;
+  height: 110vh;
+  background-color: var(--clr-primary-200);
 }
 
 .wrapper h2 {
