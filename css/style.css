@@ -493,7 +493,22 @@ div.title a {
   }
 }
 
+@media (max-height: 40rem) {
+  div.title h1 {
+    font-size: 5rem;
+  }
+
+  div.title h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /* timeline */
+.timeline-wrapper h2 {
+  text-align: center;
+  margin: min(2%, 0.7rem);
+}
+
 .timeline {
   /* width: 90%; */
   max-width: 80rem;
@@ -509,6 +524,7 @@ div.title a {
 .timeline p {
   font-size: 1.3rem;
 }
+
 .timeline > *:not(:last-child) {
   margin-bottom: min(2%, 0.7rem);
 }
