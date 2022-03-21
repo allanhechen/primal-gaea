@@ -4,7 +4,7 @@
 
 
 function main() {
-  const canvas = document.querySelector('#1');
+  const canvas = document.querySelector('#b1');
   const renderer = new THREE.WebGLRenderer({canvas});
 
   const fov = 45;
