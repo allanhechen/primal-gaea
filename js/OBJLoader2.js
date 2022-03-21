@@ -7,7 +7,7 @@
 
  if ( THREE.OBJLoader2 === undefined ) { THREE.OBJLoader2 = {} }
  
- if ( THREE.LoaderSupport === undefined ) console.error( '"THREE.LoaderSupport" is not available. "THREE.OBJLoader2" requires it. Please include "LoaderSupport.js" in your HTML.' );
+ if ( THREE.LoaderSupport === undefined ) console.error( '"THR                    EE.LoaderSupport" is not available. "THREE.OBJLoader2" requires it. Please include "LoaderSupport.js" in your HTML.' );
  
  /**
   * Use this class to load OBJ data from files or to parse OBJ data from an arraybuffer
