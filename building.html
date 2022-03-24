@@ -3,7 +3,6 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/whitepaper.css">
   <link rel="icon" type="image/x-icon" href="img/icon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +12,13 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Primal Gaea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="/js/three.min.js"></script>
+  <script src="/js/OrbitalControls.js"></script>
+  <script src="/js/LoaderSupport.js"></script>
+  <script src="/js/OBJLoader2.js"></script>
+  <script src="/js/MTLLoader.js"></script>
+  <script src="/js/render.js" defer></script>
 </head>
 
 <body>
@@ -36,17 +42,44 @@
     </nav>
   </div>
 
-  <div class="wrapper">
-    <div class="container bg-dark">
-      <div class="text conceptArt">
-        <h2>Building</h2>
-      </div>
-      <div>
-        <canvas id="b1"></canvas>
-       
+  <a class="anchor" id="conceptart"></a>
+  <div class="container bg-medium">
+    <!-- Slider main container -->
+    <div class="text conceptArt">
+      <h2>Building</h2>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <canvas id="b1"></canvas>
+          </div>
+          <div class="swiper-slide">
+            <canvas id="b2"></canvas> 
+          </div>
+          <div class="swiper-slide">
+            <canvas id="b3"></canvas> 
+          </div>
+          <div class="swiper-slide">
+            <canvas id="b4"></canvas> 
+          </div>
+          <div class="swiper-slide">
+            <canvas id="b5"></canvas> 
+          </div>
+          <div class="swiper-slide">
+            <canvas id="b6"></canvas> 
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <img class="swiper-button-prev" src="img/navigation/previous@0.5x.png">
+        <img class="swiper-button-next" src="img/navigation/next@0.5x.png">
       </div>
     </div>
   </div>
+
 
   <div class="footer-wrapper">
     <footer>
@@ -87,12 +120,6 @@
     </footer>
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-  <script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/three.min.js"></script>
-  <script src="/js/OrbitalControls.js"></script>
-  <script src="/js/LoaderSupport.js"></script>
-  <script src="/js/OBJLoader2.js"></script>
-  <script src="/js/render.js" defer></script>
 </body>
 
 </html>

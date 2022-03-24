@@ -1,0 +1,87 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl M_3_LEGNO2
+Ka 0.000000 0.000000 0.000000
+Kd 0.368627 0.317647 0.258824
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/M_3_LEGNO2.jpg
+
+newmtl M_2_LEGNO1
+Ka 0.000000 0.000000 0.000000
+Kd 0.341176 0.317647 0.301961
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/M_2_LEGNO1.jpg
+
+newmtl medieval_door_by_nub4sh
+Ka 0.000000 0.000000 0.000000
+Kd 0.443137 0.356863 0.262745
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/medieval_door_by_nub4sh.jpg
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl M_5_STUCCO
+Ka 0.000000 0.000000 0.000000
+Kd 0.839216 0.843137 0.800000
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/M_5_STUCCO.jpg
+
+newmtl M_8_PIETRA4
+Ka 0.000000 0.000000 0.000000
+Kd 0.313725 0.309804 0.282353
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/M_8_PIETRA4.jpg
+
+newmtl Sottotetto
+Ka 0.000000 0.000000 0.000000
+Kd 0.247059 0.215686 0.172549
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/Sottotetto.jpg
+
+newmtl TexturesCom_RooftilesWood0033_2_M
+Ka 0.000000 0.000000 0.000000
+Kd 0.278431 0.258824 0.211765
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/TexturesCom_RooftilesWood0033_2_M.jpg
+
+newmtl Muro22
+Ka 0.000000 0.000000 0.000000
+Kd 0.349020 0.337255 0.254902
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/Muro22.jpg
+
+newmtl M_9_ASSI_DI_LEGNO
+Ka 0.000000 0.000000 0.000000
+Kd 0.419608 0.352941 0.270588
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/M_9_ASSI_DI_LEGNO.jpg
+
+newmtl M_4_LEGNO3
+Ka 0.000000 0.000000 0.000000
+Kd 0.254902 0.227451 0.192157
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/M_4_LEGNO3.jpg
+
+newmtl medieval_window_texture_2
+Ka 0.000000 0.000000 0.000000
+Kd 0.890196 0.890196 0.894118
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/medieval_window_texture_2.png
+
+newmtl RusticMedievalDoor
+Ka 0.000000 0.000000 0.000000
+Kd 0.509804 0.494118 0.450980
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/RusticMedievalDoor.jpg
+
+newmtl rich_brick_plaster
+Ka 0.000000 0.000000 0.000000
+Kd 0.721569 0.717647 0.682353
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings7/rich_brick_plaster.jpg
+
