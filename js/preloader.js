@@ -6,6 +6,6 @@ window.onload = function () {
   });  
 } 
 
-function sleep (time) {
+function sleep(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }

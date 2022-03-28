@@ -145,6 +145,42 @@ p {
   margin-bottom: 1em;
 }
 
+/* sticky music player */
+#overlay-music {
+  margin: 0 1em;
+  padding: 0 1em;
+  position: fixed;
+  z-index: 5;
+  bottom: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 500ms, opacity 500ms linear;
+}
+
+#overlay-music {
+  height: 3rem;
+  width: 16rem;
+  display: flex;
+  background-color: rgba(9, 19, 53, 0.99);
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+#overlay-music .controls > img {
+  width: 30px;
+}
+
+#overlay-music p {
+  color: white;
+  transform: translateY(-2px);
+}
+
+#overlay-music.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* sticky helpbar */
 #overlay-links {
   margin: 0 1em;
@@ -152,7 +188,7 @@ p {
   position: fixed;
   z-index: 5;
   bottom: -3px;
-  right: 5vw;
+  right: 2vw;
   opacity: 0;
   visibility: hidden;
   transition: visibility 500ms, opacity 500ms linear;
@@ -187,6 +223,16 @@ p {
   top: 20px;
   width: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 35rem) {
+  #overlay-music p {
+    display: none;
+  }
+
+  #overlay-music {
+    width: auto;
+  }
 }
 
 /* general */

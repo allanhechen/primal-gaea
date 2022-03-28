@@ -73,6 +73,16 @@
     </div>
   </div>
 
+  <div class="overlay-wrapper">
+    <div id="overlay-music">
+      <p>Background Music</p>
+      <div class="controls">
+        <!-- <img src="img/circle-play-solid.svg"> -->
+        <img id="play-button" src="img/circle-play-solid.svg" onclick="play()">
+      </div>
+    </div>
+    <audio id="audio" src="music/pgbgmusic.mpeg" type="audio/mpeg" loop></audio>
+  </div>
   <div class="container bg-light">
     <!-- insert transition svg -->
     <a class="anchor" id="about"></a>
@@ -151,7 +161,7 @@
 
   <a class="anchor" id="conceptart"></a>
   <div class="container bg-medium">
-    <div id="fullscreen1" class="">
+    <!-- <div id="fullscreen1" class=""> -->
       <!-- Slider main container -->
       <div class="text conceptArt">
         <h2>Concept Art</h2>
@@ -169,7 +179,7 @@
            <img class="swiper-button-next" src="img/navigation/next@0.5x.png">
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 
   <a class="anchor" id="roadmap"></a>
@@ -260,6 +270,7 @@
   <script type="text/javascript" src="js/scroll.js"></script>
   <script type="text/javascript" src="js/preloader.js"></script>
   <script type="text/javascript" src="js/countdown.js"></script>
+  <script type="text/javascript" src="js/music.js"></script>
 </body>
 
 </html>
