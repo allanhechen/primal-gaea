@@ -10,7 +10,6 @@ function slide() {
 document.addEventListener('click', function(e){
   x = e.pageX;
   target = e.target;
-  console.log(target.tagName);
   if (target != dropDown && !dropDown.contains(target) && target != dropDownMore) {
     dropDown.classList.remove("active");
     dropDown.classList.remove("clickable");
@@ -31,4 +30,8 @@ function removeOverlay() {
   sleep(500).then(() => {
     overlay.remove();
   }); 
+}
+
+function fullscreen(id) {
+  document.getElementById(id).classList.add("fullscreen");
 }

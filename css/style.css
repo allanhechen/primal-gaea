@@ -19,6 +19,13 @@
   width: 100%;
 }
 
+.swiper-slide canvas {
+  display: block;
+  width: 1920px;
+  height:720px;
+  width: 100%;
+}
+
 .swiper-button-next, .swiper-button-prev {
   width: inherit;
   opacity: 0;

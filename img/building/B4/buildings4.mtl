@@ -1,0 +1,70 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl _1
+Ka 0.000000 0.000000 0.000000
+Kd 0.447059 0.325490 0.274510
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/_1.jpg
+
+newmtl _13
+Ka 0.000000 0.000000 0.000000
+Kd 0.525490 0.498039 0.486275
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/_13.jpg
+
+newmtl Material123
+Ka 0.000000 0.000000 0.000000
+Kd 0.349020 0.333333 0.301961
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/Material123.jpg
+
+newmtl Madeira_t_bua
+Ka 0.000000 0.000000 0.000000
+Kd 0.627451 0.541176 0.450980
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/Madeira_t_bua.png
+
+newmtl Muro_de_pedras
+Ka 0.000000 0.000000 0.000000
+Kd 0.333333 0.333333 0.333333
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/Muro_de_pedras.png
+
+newmtl _2
+Ka 0.000000 0.000000 0.000000
+Kd 0.788235 0.776471 0.745098
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/_2.jpg
+
+newmtl _LightGray_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.470588 0.474510 0.470588
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/_LightGray_1.bmp
+
+newmtl _Color_002_8
+Ka 0.000000 0.000000 0.000000
+Kd 0.180392 0.184314 0.172549
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/_Color_002_8.bmp
+
+newmtl Color_001
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.235294 0.203922
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/Color_001.bmp
+
+newmtl _Color_001_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.231373 0.168627 0.133333
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/_Color_001_1.bmp
+
+newmtl Color_002
+Ka 0.000000 0.000000 0.000000
+Kd 0.317647 0.215686 0.160784
+Ks 0.330000 0.330000 0.330000
+map_Kd buildings4/Color_002.bmp
+
