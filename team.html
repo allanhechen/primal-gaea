@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/whitepaper.css">
+  <link rel="icon" type="image/x-icon" href="img/icon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra&family=Crimson+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+    integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Primal Gaea</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="preloader">
+    <img src="img/preload@0.5x.png">
+    <h1>Loading...</h1>
+  </div>
+
+  <div class="nav-wrapper view-navbar" id="navbar">
+    <nav class="top-nav">
+      <a href="index.html">
+        <h1>Primal Gaea</h1>
+      </a>
+      <img src="img/menu.png" onclick="slide()">
+      <div class="link-container" id="nav-menu">
+        <img src="img/menu.png" onclick="slide()">
+        <div class="links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="team.html">About The Team</a></li>
+            <li><a href="buildings.html">Buildings</a></li>
+          </ul>
+          <a href=""><img src="img/navigation/Play_Now.png"></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="overlay-wrapper">
+    <div id="overlay-links">
+      <!-- don't forget to add the close button -->
+      <img id="close" onclick="removeOverlay()" src="img/navigation/Find Us_X.png">
+      <img src="img/overlay/Find_us_blank@0.5x.png">
+      <div class="overlay-link-wrapper">
+        <a href="https://discord.gg/943DpJpshW" title="Discord"><img src="img/overlay/discord@0.5x.png"></a>
+        <a href="https://telegram.org/" title="Telegram"><img src="img/overlay/telegram@0.5x.png"></a>
+        <a href="https://medium.com/@primalgaea" title="Medium"><img src="img/overlay/medium@0.5x.png"></a>
+        <a href="https://twitter.com/PrimalGaea" title="Twitter"><img src="img/overlay/twitter@0.5x.png"></a>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/img/team/1.png" class="teamCard">
+        <div class="container">
+          <h2>Nick</h2>
+          <p class="title">IT Programmer & Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/img/team/1.png" class="teamCard">
+        <div class="container">
+          <h2>Jarett</h2>
+          <p class="title">Game Development</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="/img/team/1.png" class="teamCard">
+        <div class="container">
+          <h2>Andrew</h2>
+          <p class="title">Finance & Economic</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/img/team/1.png" class="teamCard">
+        <div class="container">
+          <h2>Tom</h2>
+          <p class="title">Composer / Producer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/img/team/1.png" class="teamCard">
+        <div class="container">
+          <h2>Geo</h2>
+          <p class="title">Story / Plot</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="/img/team/1.png" class="teamCard">
+        <div class="container">
+          <h2>Teddy </h2>
+          <p class="title">Artist / Designer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</div>
+  <div class="footer-wrapper">
+    <footer id="footer">
+      <div class="footer-container footer-logo"><a><img src="img/baby-monstah-small@0.33x.png"></a></div>
+      <div class="footer-container">
+        <ul>
+          <li>
+            <h3>Primal Gaea</h3>
+          </li>
+          <li><a href="whitepaper.html">Whitepaper</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-container">
+        <ul>
+          <li>
+            <h3>Baby Monstah</h3>
+          </li>
+          <li><a href="http://bbmonstah.com/html/team.html">Team</a></li>
+          <li><a href="http://bbmonstah.com/html/career.html">Careers</a></li>
+          <li><a href="https://bbmonstah.com/html/jim.html">Invest</a></li>
+        </ul>
+      </div>
+      <div class="socials-container">
+        <ul>
+          <li>
+            <h3>Socials</h3>
+          </li>
+          <li><a class="fa-brands fa-twitter" href="https://twitter.com/PrimalGaea"></a></li>
+          <li><a class="fa-brands fa-medium" href="https://medium.com/@primalgaea"></a></li>
+          <li><a class="fa-brands fa-telegram" href="https://telegram.org/"></a></li>
+          <li><a class="fa-brands fa-discord" href="https://discord.gg/943DpJpshW"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script>
+  <script type="text/javascript" src="js/preloader.js"></script>
+  <script type="text/javascript" src="js/scrollOther.js"></script>
+</body>
+
+</html>
+
