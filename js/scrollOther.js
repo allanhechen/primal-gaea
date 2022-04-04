@@ -2,7 +2,6 @@ const overlay = document.getElementById("overlay-links");
 const footer = document.getElementById("footer");
 
 var myScrollFunc = function() {
-  // console.log(footer.getBoundingClientRect().top < window.innerHeight);
   if (footer.getBoundingClientRect().top < window.innerHeight) {
     overlay.classList.remove("visible");
   } else if (window.scrollY >= 0) {
