@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/logo.jpeg">
-  <link rel="preload" as="image" href="img/preload.png">
+  <link rel="preload" as="image" href="img/preload@0.5x.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almendra&family=Crimson+Pro:wght@300;400;500&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
 
 <body>
   <div id="preloader">
-    <img src="img/preload.png">
+    <img src="img/preload@0.5x.png">
     <h1>Loading...</h1>
   </div>
 
@@ -76,9 +76,19 @@
   <div class="overlay-wrapper">
     <div id="overlay-music">
       <p>Background Music</p>
+
       <div class="controls">
         <!-- <img src="img/circle-play-solid.svg"> -->
         <img id="play-button" src="img/player/circle-play-solid.svg" onclick="play()">
+      </div>
+      <br>
+      <p>
+        <i class="fa fa-volume-down"></i>
+        <div id="volume"></div>
+        <i class="fa fa-volume-up"></i>
+      </p>
+      <div id="player">
+        
       </div>
     </div>
     <audio id="audio" src="music/pgbgmusic.mpeg" type="audio/mpeg" loop></audio>
@@ -87,7 +97,7 @@
     <!-- insert transition svg -->
     <a class="anchor" id="about"></a>
     <div class="selling-point">
-      <img src="img/sell1-small@0.5x.png" alt="Cats in outfits">
+      <img src="img/pannel/p1.png" alt="Cats in outfits">
       <div class="text right">
         <h2>What is Primal Gaea?</h2>
         <p>
@@ -119,12 +129,12 @@
                   powerful inventions will not only serve them but the greater good of the community.
                 </p>
               </div>
-              <img src="img/sell2.jpg" alt="Various Weapons">
+              <img src="img/pannel/p2.jpg" alt="Various Weapons">
             </div>
           </div>
           <div class="swiper-selling swiper-slide">
             <div class="selling-point">
-              <img src="img/sell3-small@0.5x.png" alt="Green Health Potion">
+              <img src="img/pannel/p3.png" alt="Green Health Potion">
               <div class="text right">
                 <h2>Inventory System</h2>
                 <p>
@@ -155,7 +165,7 @@
           Community feedback will be welcome and considered. After all this Primal Gaea is run by the inhabitants.
         </p>
       </div>
-      <img src="img/sell4.jpg" alt="Housing Plan">
+      <img src="img/pannel/p4.jpg" alt="Housing Plan">
     </div>
   </div>
 
@@ -262,7 +272,7 @@
   </div>
 
   <script type="text/javascript" src="js/jquery.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="js/swiper.js"></script>
   <script type="text/javascript" src="js/slide.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
