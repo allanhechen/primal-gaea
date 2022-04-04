@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/x-icon" href="img/icon.ico">
-  <link rel="preload" as="image" href="img/preload@0.5x.png">
+  <link rel="icon" href="img/logo.jpeg">
+  <link rel="preload" as="image" href="img/preload.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almendra&family=Crimson+Pro:wght@300;400;500&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
 
 <body>
   <div id="preloader">
-    <img src="img/preload@0.5x.png">
+    <img src="img/preload.png">
     <h1>Loading...</h1>
   </div>
 
@@ -28,7 +28,7 @@
         <a href="index.html">
           <h1>Primal Gaea</h1>
         </a>
-        <img id="openMenu" src="img/menu.png" onclick="slide()">
+        <img id="openMenu" src="img/navigation/menu.png" onclick="slide()">
         <div class="link-container" id="nav-menu">
           <img src="img/close-button.svg" onclick="slide()">
           <div class="links">
@@ -78,7 +78,7 @@
       <p>Background Music</p>
       <div class="controls">
         <!-- <img src="img/circle-play-solid.svg"> -->
-        <img id="play-button" src="img/circle-play-solid.svg" onclick="play()">
+        <img id="play-button" src="img/player/circle-play-solid.svg" onclick="play()">
       </div>
     </div>
     <audio id="audio" src="music/pgbgmusic.mpeg" type="audio/mpeg" loop></audio>
@@ -138,8 +138,8 @@
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
         <!-- If we need navigation buttons -->
-        <img class="swiper-button-prev" src="img/navigation/previous@0.5x.png">
-        <img class="swiper-button-next" src="img/navigation/next@0.5x.png">
+        <img class="swiper-button-prev" src="img/navigation/previous.png">
+        <img class="swiper-button-next" src="img/navigation/next.png">
       </div>
     </div>
   </div>
@@ -175,8 +175,8 @@
            <!-- If we need pagination -->
            <div class="swiper-pagination"></div>
            <!-- If we need navigation buttons -->
-           <img class="swiper-button-prev" src="img/navigation/previous@0.5x.png">
-           <img class="swiper-button-next" src="img/navigation/next@0.5x.png">
+           <img class="swiper-button-prev" src="img/navigation/previous.png">
+           <img class="swiper-button-next" src="img/navigation/next.png">
         </div>
       </div>
     <!-- </div> -->
@@ -226,7 +226,7 @@
 
   <div class="footer-wrapper">
     <footer id="footer">
-      <div class="footer-container footer-logo"><a><img src="img/baby-monstah-small@0.33x.png"></a></div>
+      <div class="footer-container footer-logo"><a><img src="img/bbLogo.png"></a></div>
       <div class="footer-container">
         <ul>
           <li>
@@ -261,7 +261,7 @@
     </footer>
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="js/swiper.js"></script>
   <script type="text/javascript" src="js/slide.js"></script>
@@ -272,10 +272,3 @@
 </body>
 
 </html>
-
-<!-- 
-  TODO
-  about team about -> bbmonstal 
-  roadmap
-  oracle system (clothing id) 
--->

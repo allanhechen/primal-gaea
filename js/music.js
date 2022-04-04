@@ -4,11 +4,11 @@ var isPlaying = false;
 
 function play() {
   if (isPlaying) {
-    playButton.src = "img/circle-play-solid.svg";
+    playButton.src = "img/player/circle-play-solid.svg";
     isPlaying = false;
     audioSource.pause();
   } else {
-    playButton.src = "img/circle-pause-solid.svg";
+    playButton.src = "img/player/circle-pause-solid.svg";
     isPlaying = true;
     audioSource.play();
   }
