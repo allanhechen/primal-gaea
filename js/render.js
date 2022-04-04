@@ -26,7 +26,7 @@ function main() {
       const planeSize = 4000;
 
       const loader = new THREE.TextureLoader();
-      const texture = loader.load("../model/checker.png");
+      const texture = loader.load("../img/building/checker.png");
       texture.wrapS = THREE.RepeatWrapping;
       texture.wrapT = THREE.RepeatWrapping;
       texture.magFilter = THREE.NearestFilter;
@@ -87,29 +87,36 @@ function main() {
   }
 
   {
-    const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl("model/buildings.mtl", null, (materials) => {
-      objLoader.setMaterials(materials);
-      objLoader.load("model/buildings.obj", (event) => {
-        const root = event.detail.loaderRootNode;
-        scene.add(root);
-
-        // compute the box that contains all the stuff
-        // from root and below
-        const box = new THREE.Box3().setFromObject(root);
-
-        const boxSize = box.getSize(new THREE.Vector3()).length();
-        const boxCenter = box.getCenter(new THREE.Vector3());
-
-        // set the camera to frame the box
-        frameArea(boxSize * 1.2, boxSize, boxCenter, camera);
-
-        // update the Trackball controls to handle the new size
-        controls.maxDistance = boxSize * 10;
-        controls.target.copy(boxCenter);
-        controls.update();
-      });
+    let loader = new THREE.GLTFLoader();
+    loader.load('model/buildings.gltf', function(gltf){
+      var car = gltf.scene.children[0];
+      car.scale.set(0.5,0.5,0.5);
+      scene.add(gltf.scene);
     });
+
+    // const objLoader = new THREE.OBJLoader2();
+    // objLoader.loadMtl("model/buildings.mtl", null, (materials) => {
+    //   objLoader.setMaterials(materials);
+    //   objLoader.load("model/buildings.obj", (event) => {
+    //     const root = event.detail.loaderRootNode;
+    //     scene.add(root);
+
+    //     // compute the box that contains all the stuff
+    //     // from root and below
+    //     const box = new THREE.Box3().setFromObject(root);
+
+    //     const boxSize = box.getSize(new THREE.Vector3()).length();
+    //     const boxCenter = box.getCenter(new THREE.Vector3());
+
+    //     // set the camera to frame the box
+    //     frameArea(boxSize * 1.2, boxSize, boxCenter, camera);
+
+    //     // update the Trackball controls to handle the new size
+    //     controls.maxDistance = boxSize * 10;
+    //     controls.target.copy(boxCenter);
+    //     controls.update();
+    //   });
+    // });
   }
 
   function resizeRendererToDisplaySize(renderer) {

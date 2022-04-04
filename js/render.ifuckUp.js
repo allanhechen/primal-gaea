@@ -152,7 +152,6 @@ function main() {
       camera.updateProjectionMatrix();
     }
 
-    
       var scensObj = canvasList[i][3];
       canvasList[i][4].render(scensObj, camera);
     }
