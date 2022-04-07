@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/buildings.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css">
+  <!-- <link rel="preload" as="image" href="img/preload.png"> -->
   <title>Primal Gaea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-  <!-- <script src="/js/three.min.js"></script>
-  <script src="/js/OrbitalControls.js"></script>
-  <script src="/js/LoaderSupport.js"></script>
-  <script src="/js/OBJLoader2.js"></script>
-  <script src="/js/MTLLoader.js"></script>
-  <script src="/js/GLTFLoader.js"></script>
-  <script src="/js/render.js" defer></script>
-   -->
-   <script src="/js/mode3D.js"></script>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 </head>
 
 <body>
+    <div id="preloader">
+      <img src="img/preload.png">
+      <h1>Loading...</h1>
+    </div>
+
   <div class="nav-wrapper view-navbar" id="navbar">
     <nav class="top-nav">
       <a href="index.html">
@@ -42,18 +42,35 @@
     </nav>
   </div>
 
-  <a class="anchor" id="conceptart"></a>
-  <div class="container bg-medium">
-    <!-- Slider main container -->
-    <div class="text conceptArt">
-      <h2>Building</h2>
-      <!-- background-color="#ffffff" -->
-      <model-3d  src="/img/building/B1/t/b1.glb" style="width: 100%; height: 100%;" background-color="#ffffff"></model-3d>
-      <br>
+  <div class="wrapper">
 
-    </div>
+      <div class="container bg-medium">
+        <!-- <div id="fullscreen1" class=""> -->
+          <!-- Slider main container -->
+          <div class="text conceptArt">
+            <h2>Building</h2>
+            <div class="swiper" onclick="fullscreen('fullscreen1')">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"> 
+                  <model-viewer camera-controls camera-target="-35m -5m 10m" auto-rotate  class="b1" environment-image="neutral" src="img/building/B1/b1.glb" shadow-intensity="1"></model-viewer>
+                </div>
+                <!-- <div class="swiper-slide">
+                   <model-viewer camera-controls camera-target="-35m 0m 5m" auto-rotate  class="b1" src="img/building/B1/buildings.gltf" shadow-intensity="1"></model-viewer>
+                  </div> -->
+              </div>
+               <!-- If we need pagination -->
+               <div class="swiper-pagination"></div>
+               <!-- If we need navigation buttons -->
+               <img class="swiper-button-prev" src="img/navigation/previous.png">
+               <img class="swiper-button-next" src="img/navigation/next.png">
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+
   </div>
-
   <div class="footer-wrapper">
     <footer id="footer">
       <div class="footer-container footer-logo"><a><img src="img/bbLogo.png"></a></div>
@@ -90,6 +107,11 @@
       </div>
     </footer>
   </div>
+
+  <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/swiper.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script>
+  <script type="text/javascript" src="js/preloader.js"></script>
 
 </body>
 

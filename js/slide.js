@@ -8,6 +8,7 @@ function slide() {
 }
 
 document.addEventListener('click', function(e){
+ 
   x = e.pageX;
   target = e.target;
   if (target != dropDown && !dropDown.contains(target) && target != dropDownMore) {

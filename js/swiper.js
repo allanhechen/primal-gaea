@@ -2,6 +2,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  simulateTouch : false,
 
   // Navigation arrows
   navigation: {
@@ -9,7 +10,9 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
+
+  
 });
