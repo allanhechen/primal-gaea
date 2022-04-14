@@ -42,7 +42,7 @@
                 </ul>
               </li>
             </ul>
-            <a href=""><img src="img/navigation/Play_Now.png"></a>
+            <a href="commingSoon.html"><img src="img/navigation/Play_Now.png"></a>
           </div>
         </div>
       </nav>
@@ -51,8 +51,8 @@
 
   <div class="title">
     <h1>Primal Gaea</h1>
-    <div id="countdown"></div>
-    <a href=""><img src="img/navigation/Play_Now.png"></a>
+    <!-- <div id="countdown"></div> -->
+    <a href="commingSoon.html"><img src="img/navigation/Play_Now.png"></a>
   </div>
 
   <div class="overlay-wrapper">
@@ -60,7 +60,7 @@
       <img id="close" onclick="removeOverlay()" src="img/navigation/X.png">
       <img src="img/overlay/Find_us_blank.png">
       <div class="overlay-link-wrapper">
-        <a href="https://discord.gg/943DpJpshW" title="Discord"><img src="img/overlay/ discord.png"></a>
+        <a href="https://discord.gg/943DpJpshW" title="Discord"><img src="img/overlay/discord.png"></a>
         <a href="https://telegram.org/" title="Telegram"><img src="img/overlay/telegram.png"></a>
         <a href="https://medium.com/@primalgaea" title="Medium"><img src="img/overlay/medium.png"></a>
         <a href="https://twitter.com/PrimalGaea" title="Twitter"><img src="img/overlay/twitter.png"></a>
@@ -68,26 +68,23 @@
     </div>
   </div>
 
-  <div class="overlay-wrapper">
+  
     <div id="overlay-music">
-      <p>Background Music</p>
-
-      <div class="controls">
-        <!-- <img src="img/circle-play-solid.svg"> -->
-        <img id="play-button" src="img/player/circle-play-solid.svg" onclick="play()">
-      </div>
-      <br>
-      <p>
-        <i class="fa fa-volume-down"></i>
-        <div id="volume"></div>
-        <i class="fa fa-volume-up"></i>
+      <p>Background Music  
+        <img id="play-button" src="img/player/circle-play-solid.svg" onclick="play()"> 
       </p>
-      <div id="player">
-        
-      </div>
+        <div id="player">
+          <p class="fa fa-volume-down"></p>
+          <i class="fa fa-volume-down"></i>
+          <div id="volume"></div>
+          <i class="fa fa-volume-up"></i>
+        </div>
+
+          
+      <audio id="audio" src="music/pgbgmusic.mp3" type="audio/mpeg" loop></audio>
     </div>
-    <audio id="audio" src="music/pgbgmusic.mpeg" type="audio/mpeg" loop></audio>
-  </div>
+   
+
   <div class="container bg-light">
     <!-- insert transition svg -->
     <a class="anchor" id="about"></a>
@@ -167,23 +164,23 @@
   <a class="anchor" id="conceptart"></a>
   <div class="container bg-medium">
     <!-- <div id="fullscreen1" class=""> -->
-      <!-- Slider main container -->
-      <div class="text conceptArt">
-        <h2>Concept Art</h2>
-        <div class="swiper" onclick="fullscreen('fullscreen1')">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="img/concept/concept1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/concept/concept2.jpg" alt=""></div>
-          </div>
-           <!-- If we need pagination -->
-           <div class="swiper-pagination"></div>
-           <!-- If we need navigation buttons -->
-           <img class="swiper-button-prev" src="img/navigation/previous.png">
-           <img class="swiper-button-next" src="img/navigation/next.png">
+    <!-- Slider main container -->
+    <div class="text conceptArt">
+      <h2>Concept Art</h2>
+      <div class="swiper" onclick="fullscreen('fullscreen1')">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/concept/concept1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/concept/concept2.jpg" alt=""></div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <img class="swiper-button-prev" src="img/navigation/previous.png">
+        <img class="swiper-button-next" src="img/navigation/next.png">
       </div>
+    </div>
     <!-- </div> -->
   </div>
 
@@ -199,7 +196,7 @@
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
             eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
-             maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+            maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
         </div>
         <div class="timeline-content">
           <h3>header2</h3>
@@ -207,7 +204,7 @@
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
             eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
-             maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+            maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
         </div>
         <div class="timeline-content">
           <h3>header3</h3>
@@ -215,7 +212,7 @@
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
             eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
-             maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+            maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
         </div>
         <div class="timeline-content">
           <h3>header4</h3>
@@ -223,7 +220,7 @@
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
             eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
-             maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+            maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
         </div>
       </div>
     </div>
@@ -247,7 +244,7 @@
           <li>
             <h3>Baby Monstah</h3>
           </li>
-          <li><a href="http://bbmonstah.com/html/team.html">Team</a></li>
+          <li><a href="team.html">Team</a></li>
           <li><a href="http://bbmonstah.com/html/career.html">Careers</a></li>
           <li><a href="https://bbmonstah.com/html/jim.html">Invest</a></li>
         </ul>
@@ -259,7 +256,7 @@
           </li>
           <li><a class="fa-brands fa-twitter" href="https://twitter.com/PrimalGaea"></a></li>
           <li><a class="fa-brands fa-medium" href="https://medium.com/@primalgaea"></a></li>
-          <li><a class="fa-brands fa-telegram" href="https://telegram.org/"></a></li>
+          <li><a class="fa-brands fa-telegram" href="https://t.me/+USpvYRj-drQ1NWNl"></a></li>
           <li><a class="fa-brands fa-discord" href="https://discord.gg/943DpJpshW"></a></li>
         </ul>
       </div>
@@ -272,7 +269,7 @@
   <script type="text/javascript" src="js/slide.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
   <script type="text/javascript" src="js/preloader.js"></script>
-  <script type="text/javascript" src="js/countdown.js"></script>
+  <!-- <script type="text/javascript" src="js/countdown.js"></script> -->
   <script type="text/javascript" src="js/music.js"></script>
 </body>
 
