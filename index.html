@@ -73,14 +73,10 @@
       <p>Background Music  
         <img id="play-button" src="img/player/circle-play-solid.svg" onclick="play()"> 
       </p>
-        <div id="player">
-          <p class="fa fa-volume-down"></p>
-          <i class="fa fa-volume-down"></i>
-          <div id="volume"></div>
-          <i class="fa fa-volume-up"></i>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          <p id="volumeId">50</div>
         </div>
-
-          
       <audio id="audio" src="music/pgbgmusic.mp3" type="audio/mpeg" loop></audio>
     </div>
    
@@ -163,16 +159,15 @@
 
   <a class="anchor" id="conceptart"></a>
   <div class="container bg-medium">
-    <!-- <div id="fullscreen1" class=""> -->
     <!-- Slider main container -->
     <div class="text conceptArt">
       <h2>Concept Art</h2>
-      <div class="swiper" onclick="fullscreen('fullscreen1')">
+      <div class="swiper swiper-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="img/concept/concept1.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="img/concept/concept2.jpg" alt=""></div>
+          <div class="swiper-slide" id="1"><img src="img/concept/concept1.jpg" alt=""></div>
+          <div class="swiper-slide" id="2"><img src="img/concept/concept2.jpg" alt=""></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -180,9 +175,15 @@
         <img class="swiper-button-prev" src="img/navigation/previous.png">
         <img class="swiper-button-next" src="img/navigation/next.png">
       </div>
+
+        <!-- holder for the fullscreen slider -->
+        <div id="fullscreen-swiper"></div>
+        <div id="fullscreen-swiper-backdrop"></div>
     </div>
     <!-- </div> -->
   </div>
+
+
 
   <a class="anchor" id="roadmap"></a>
   <div class="container bg-light">

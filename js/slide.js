@@ -32,7 +32,3 @@ function removeOverlay() {
     overlay.remove();
   }); 
 }
-
-function fullscreen(id) {
-  document.getElementById(id).classList.add("fullscreen");
-}
