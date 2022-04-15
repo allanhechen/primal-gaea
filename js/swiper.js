@@ -31,8 +31,6 @@
         prevButton: '.swiper-button-prev',
         slidesPerView: 1,
         centeredSlides: true,
-        paginationClickable: true,
-        spaceBetween: 10,
         loop: true,
         initialSlide: initialSlideNumber - 1,
       });      
