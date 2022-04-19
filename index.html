@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css">
   <link rel="preload" as="image" href="img/preload.png">
+
   <title>Primal Gaea</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,13 +37,18 @@
               <li>
                 <p id="more" onclick="dropdown()">More</p>
                 <ul id="dropdown-menu">
-                  <li><a href="whitepaper.html">Whitepaper</a></li>
-                  <li><a href="team.html">About The Team</a></li>
-                  <li><a href="buildings.html">Buildings</a></li>
+                  <li><a href="#popup"> Whitepaper</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="#popup">Buildings</a></li>
                 </ul>
               </li>
             </ul>
-            <a href="commingSoon.html"><img src="img/navigation/Play_Now.png"></a>
+            <div>
+              <a href="#popup"><img src="img/navigation/Play_Now.png"></a>
+            </div>
+
+
+
           </div>
         </div>
       </nav>
@@ -52,7 +58,8 @@
   <div class="title">
     <h1>Primal Gaea</h1>
     <!-- <div id="countdown"></div> -->
-    <a href="commingSoon.html"><img src="img/navigation/Play_Now.png"></a>
+    <a href="#popup"><img src="img/navigation/Play_Now.png"></a>
+
   </div>
 
   <div class="overlay-wrapper">
@@ -68,18 +75,19 @@
     </div>
   </div>
 
-  
-    <div id="overlay-music">
-      <p>Background Music  
-        <img id="play-button" src="img/player/circle-play-solid.svg" onclick="play()"> 
-      </p>
-        <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-          <p id="volumeId">50</div>
-        </div>
-      <audio id="audio" src="music/pgbgmusic.mp3" type="audio/mpeg" loop></audio>
+
+  <div id="overlay-music">
+    <p>Background Music
+      <img id="play-button" src="img/player/circle-play-solid.svg" onclick="play()">
+    </p>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <p id="volumeId">50
     </div>
-   
+  </div>
+  <audio id="audio" src="music/pgbgmusic.mp3" type="audio/mpeg" loop></audio>
+  </div>
+
 
   <div class="container bg-light">
     <!-- insert transition svg -->
@@ -132,6 +140,11 @@
               </div>
             </div>
           </div>
+          <div class="swiper-selling swiper-slide">
+            <div class="selling-point">
+              <img src="img/pannel/p4.gif" style="max-width: 100%;" alt="Primal Cat">
+            </div>
+          </div>
         </div>
 
         <!-- If we need navigation buttons -->
@@ -161,23 +174,23 @@
     <!-- Slider main container -->
     <div class="text conceptArt">
       <h2>Concept Art</h2>
-      <div class="swiper swiper-container">
+      <div class="swiper swiper-container swiper-fullscreen">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide" id="1"><img src="img/concept/concept1.jpg" alt=""></div>
-          <div class="swiper-slide" id="2"><img src="img/concept/concept2.jpg" alt=""></div>
+          <div class="swiper-slide" id="1"><img src="img/concept/concept1.jpg"></div>
+          <div class="swiper-slide" id="2"><img src="img/concept/concept2.jpg"></div>
+          <div class="swiper-slide" id="3"><img src="img/concept/concept3.jpg"></div>
+          <div class="swiper-slide" id="4"><img src="img/concept/concept4.jpg"></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
         <!-- If we need navigation buttons -->
         <img class="swiper-button-prev" src="img/navigation/previous.png">
         <img class="swiper-button-next" src="img/navigation/next.png">
       </div>
 
-        <!-- holder for the fullscreen slider -->
-        <div id="fullscreen-swiper"></div>
-        <div id="fullscreen-swiper-backdrop"></div>
+      <!-- holder for the fullscreen slider -->
+      <div id="fullscreen-swiper"></div>
+      <div id="fullscreen-swiper-backdrop"></div>
     </div>
     <!-- </div> -->
   </div>
@@ -191,40 +204,85 @@
       <h2>Roadmap</h2>
       <div class="timeline clearfix">
         <div class="timeline-content">
-          <h3>header1</h3>
-          <h4 class="date">march 22, 2022</h4>
+          <h3>Pre-Phase:</h3>
+          <h4 class="date">Wildest Brainstorming</h4>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
-            eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
-            maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+            Game Genre Concept<br>
+            Game Art Sketch<br>
+            Story Concept<br>
+            Economic Structure Draft
+          </p>
         </div>
         <div class="timeline-content">
-          <h3>header2</h3>
-          <h4 class="date">march 22, 2022</h4>
+          <h3>Phase 1:</h3>
+          <h4 class="date">Operation Primal Gaea</h4>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
-            eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
-            maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+            Goals & Milestone <br>
+            Development Team <br>
+            Polishing Ideas & Practical Simulation<br>
+            Features & Game Design Feasibility
+          </p>
         </div>
         <div class="timeline-content">
-          <h3>header3</h3>
-          <h4 class="date">march 22, 2022</h4>
+          <h3>Phase 2:</h3>
+          <h4 class="date">Moving Slowly but Steadily</h4>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
-            eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
-            maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+            Confirmed Direction & Planning <br>
+            Game Engine<br>
+            Game Litepaper<br>
+            Webpage<br>
+            Medium<br>
+            Instagram<br>
+            Twitter
+          </p>
         </div>
         <div class="timeline-content">
-          <h3>header4</h3>
-          <h4 class="date">march 22, 2022</h4>
+          <h3>Phase 3 :</h3>
+          <h4 class="date">More preparation</h4>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto omnis,
-            eligendi praesentium laudantium alias quasi necessitatibus nihil tenetur eos libero
-            maxime aliquam reprehenderit eveniet laborum voluptate veniam! Aut, nobis.</p>
+            Game OST<br>
+            Real Estate Housing Litepaper<br>
+            Sales Planning<br>
+            Extend Connection Path to more Countries for Opportunity<br>
+            Game Demo
+          </p>
         </div>
+
+        <div class="timeline-content">
+          <h3>Phase 4 :</h3>
+          <h4 class="date">Demo & Test run</h4>
+          <p>
+            In-game Business Litepaper<br>
+            Game 1.0 (Discord Ver.)<br>
+            Born (1st Sales) <br>
+            Township Concept Demo Reveal (Community Bonding)
+          </p>
+        </div>
+        <div class="timeline-content">
+          <h3>Phase 5 :</h3>
+          <h4 class="date">Finalizing Framework</h4>
+          <p>
+            Game 2.0 (Browser Unity)<br>
+            Real Estate Housing Sales<br>
+            Collaboration with Companies regarding Game-World Collab
+          </p>
+        </div>
+
+
       </div>
     </div>
   </div>
+
+  <div id="popup" class="overlay">
+    <div class="popup">
+      <h2>Coming soon</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        In the mean time you can join our social media to keep up with our game progress.
+      </div>
+    </div>
+  </div>
+
 
   <div class="footer-wrapper">
     <footer id="footer">
@@ -254,10 +312,10 @@
           <li>
             <h3>Socials</h3>
           </li>
-          <li><a class="fa-brands fa-twitter" href="https://twitter.com/PrimalGaea"></a></li>
-          <li><a class="fa-brands fa-medium" href="https://medium.com/@primalgaea"></a></li>
-          <li><a class="fa-brands fa-telegram" href="https://t.me/+USpvYRj-drQ1NWNl"></a></li>
-          <li><a class="fa-brands fa-discord" href="https://discord.gg/943DpJpshW"></a></li>
+          <li><a class="fa-brands fa-twitter" href="https://twitter.com/PrimalGaea" target="_blank"></a></li>
+          <li><a class="fa-brands fa-medium" href="https://medium.com/@primalgaea" target="_blank"></a></li>
+          <li><a class="fa-brands fa-telegram" href="https://t.me/+USpvYRj-drQ1NWNl" target="_blank"></a></li>
+          <li><a class="fa-brands fa-discord" href="https://discord.gg/943DpJpshW" target="_blank"></a></li>
         </ul>
       </div>
     </footer>
@@ -269,7 +327,6 @@
   <script type="text/javascript" src="js/slide.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
   <script type="text/javascript" src="js/preloader.js"></script>
-  <!-- <script type="text/javascript" src="js/countdown.js"></script> -->
   <script type="text/javascript" src="js/music.js"></script>
 </body>
 

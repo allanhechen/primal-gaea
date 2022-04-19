@@ -501,6 +501,9 @@ p {
   max-width: 50%;
 }
 
+.catPannel {
+  max-width: 100%;
+}
 .swiper-selling > .selling-point {
   width: 98%;
 }
@@ -531,6 +534,10 @@ p {
   .selling-point > *:not(:last-child) {
     margin-bottom: 0;
   }
+
+  .catPannel {
+    max-width: 100%;
+  }
 }
 
 /* main landing nav */
@@ -540,7 +547,7 @@ p {
   width: 100%;
   background-color: rgba(9, 19, 53, 0.99);
   position: fixed;
-  top: -5.5rem;
+  top: -6.5rem;
   left: 0px;
   z-index: 10;
   transition: ease-out 500ms;
@@ -628,6 +635,13 @@ div.links {
 }
 
 nav a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--ff-primary);
+  font-size: 1.2em;
+}
+
+nav div {
   text-decoration: none;
   color: white;
   font-family: var(--ff-primary);
@@ -1136,3 +1150,63 @@ footer a {
 }
 
 
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  Z-index:3;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 120px auto;
+  padding: 90px;
+  background: url("/img/navigation/background.png") no-repeat;
+  background-size: 100% 100%;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: rgb(0, 0, 0);
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #ffffff;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
